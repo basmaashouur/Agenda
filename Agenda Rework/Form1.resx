@@ -175,7 +175,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="metroTile2.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 279</value>
@@ -231,7 +231,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="metroTile3.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 29</value>
@@ -310,7 +310,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="metroTile4.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 154</value>
@@ -378,7 +378,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile4.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="metroTile5.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 449</value>
@@ -431,7 +431,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile5.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="metroTile7.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 29</value>
@@ -474,7 +474,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile7.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="metroTile8.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 29</value>
@@ -528,7 +528,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile8.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="metroTile9.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 449</value>
@@ -603,7 +603,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile9.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="metroTile10.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 154</value>
@@ -666,13 +666,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile10.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <metadata name="MSM1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>33</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -35883,27 +35886,62 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1136, 603</value>
   </data>
+  <data name="DetailsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DetailsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Light, 14pt</value>
+  </data>
+  <data name="DetailsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 238</value>
+  </data>
+  <data name="DetailsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 150</value>
+  </data>
+  <data name="DetailsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="DetailsLabel.Text" xml:space="preserve">
+    <value>Welcome to Agenda 1.0
+This application is designed to be virtual personal assistant to help you with your
+daily tasks (Think Jarvis from Iron man).
+In the left side you'll find a great set of options to help you achieve everyday goals
+such as setting a checklist, making an appointment and alarm you when its time 
+or keep you updated on where you are in your self studying endeavor.</value>
+  </data>
+  <data name="&gt;&gt;DetailsLabel.Name" xml:space="preserve">
+    <value>DetailsLabel</value>
+  </data>
+  <data name="&gt;&gt;DetailsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DetailsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DetailsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="MenuLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="MenuLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Light, 15.25pt</value>
+    <value>Segoe UI Light, 20.25pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MenuLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="MenuLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 154</value>
+    <value>431, 173</value>
   </data>
   <data name="MenuLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 30</value>
+    <value>180, 37</value>
   </data>
   <data name="MenuLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="MenuLabel.Text" xml:space="preserve">
-    <value>label2</value>
+    <value>Welcome Kate</value>
   </data>
   <data name="&gt;&gt;MenuLabel.Name" xml:space="preserve">
     <value>MenuLabel</value>
@@ -35915,7 +35953,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MenuLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -35927,13 +35965,13 @@
     <value>417, 29</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 125</value>
+    <value>681, 125</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>label1</value>
+    <value>Wednesday , 20</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -35945,7 +35983,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="metroTile6.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 154</value>
@@ -35987,7 +36025,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile6.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;MSM1.Name" xml:space="preserve">
     <value>MSM1</value>
