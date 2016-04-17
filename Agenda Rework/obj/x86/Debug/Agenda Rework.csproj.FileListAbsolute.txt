@@ -1,5 +1,4 @@
 c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda Rework.csprojResolveAssemblyReference.cache
-c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda_Rework.Form1.resources
 c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda_Rework.Properties.Resources.resources
 c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda Rework.csproj.GenerateResource.Cache
 c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\bin\Debug\Agenda Rework.exe
@@ -9,5 +8,8 @@ c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rew
 c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda Rework.exe
 c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda Rework.pdb
 c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\bin\Debug\af-ZA\Agenda Rework.resources.dll
-c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda_Rework.Form1.af-ZA.resources
 c:\users\amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\af-ZA\Agenda Rework.resources.dll
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda_Rework.LoginForm.resources
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda_Rework.MainForm.resources
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda_Rework.Signup.resources
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda_Rework.MainForm.af-ZA.resources
