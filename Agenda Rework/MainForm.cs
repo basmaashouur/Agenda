@@ -19,10 +19,13 @@ namespace Agenda_Rework
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
             this.StyleManager = MSM1;
             label1.Text = System.DateTime.Now.DayOfWeek.ToString() + ", " + System.DateTime.Now.Day.ToString();
+            MenuLabel.Text = "Welcome "+ Agenda_Rework.LoginForm.userdata.current_user;
+            
+
 
         }
 
@@ -83,6 +86,8 @@ namespace Agenda_Rework
             MenuLabel.Text = metroTile9.Text;
         }
 
+
+       
        
     }
 }

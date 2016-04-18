@@ -205,7 +205,7 @@ namespace Agenda_Rework
             this.Controls.Add(this.metroTile1);
             this.Name = "MainForm";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MSM1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

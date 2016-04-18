@@ -61,7 +61,7 @@ namespace Agenda_Rework
                 string record = sr.ReadLine();
                 while (record != null)
                 {
-                    if (record.Split('|')[0] == Namefield.Text)
+                    if (record.Split('|')[0].ToLower() == Namefield.Text)
                     {
                         Errorlabel.Text = "Sorry, Name already exists.";
                         Err_flag = true;
@@ -98,7 +98,7 @@ namespace Agenda_Rework
                     MetroFramework.MetroMessageBox.Show(this, "Error" + err.ToString(), "Error", MessageBoxButtons.OK);
                 }
                 else {
-                    MetroFramework.MetroMessageBox.Show(this, "User Created.\nYou may now login with your new credentials", "Success!", MessageBoxButtons.OK);
+                    MetroFramework.MetroMessageBox.Show(this, "User Created.\nYou may now login with your new credentials.", "Success!", MessageBoxButtons.OK);
                     this.Hide();
                     LoginForm LF = new LoginForm();
                     LF.Show();
