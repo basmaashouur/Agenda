@@ -75,6 +75,7 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="MainForm.af-ZA.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
