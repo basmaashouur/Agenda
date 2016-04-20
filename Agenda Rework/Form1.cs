@@ -40,7 +40,7 @@ namespace Agenda_Rework
 
         private void metroTile3_Click(object sender, EventArgs e)
         {
-            MenuLabel.Text = metroTile3.Text;
+           
         }
 
         private void metroTile8_Click(object sender, EventArgs e)

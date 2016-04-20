@@ -44,6 +44,7 @@ namespace Agenda_Rework
             this.label1 = new System.Windows.Forms.Label();
             this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.MenuLabel = new System.Windows.Forms.Label();
+            this.DetailsLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MSM1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -176,12 +177,20 @@ namespace Agenda_Rework
             this.MenuLabel.ForeColor = System.Drawing.Color.White;
             this.MenuLabel.Name = "MenuLabel";
             // 
+            // DetailsLabel
+            // 
+            resources.ApplyResources(this.DetailsLabel, "DetailsLabel");
+            this.DetailsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.DetailsLabel.ForeColor = System.Drawing.Color.White;
+            this.DetailsLabel.Name = "DetailsLabel";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackImage = ((System.Drawing.Image)(resources.GetObject("$this.BackImage")));
             this.BackMaxSize = 1135;
+            this.Controls.Add(this.DetailsLabel);
             this.Controls.Add(this.MenuLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.metroTile2);
@@ -218,6 +227,7 @@ namespace Agenda_Rework
         private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroTile metroTile6;
         private System.Windows.Forms.Label MenuLabel;
+        private System.Windows.Forms.Label DetailsLabel;
     }
 }
 
