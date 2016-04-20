@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="metroButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Femalebutton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3UAAAN1AHvkboVAAAAAmJL
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3QAAAN0AEQbD0HAAAAAmJL
         R0QAAKqNIzIAAAAHdElNRQfgBBEUHxOVfmP0AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA0LTE3VDIw
         OjMxOjE5KzAyOjAw/8p/zwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wNC0xN1QyMDozMToxOSswMjow
         MI6Xx3MAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAEyElEQVR4Xu2bOYgVQRCG
@@ -148,10 +148,10 @@
         lJzs6rj/+0nwJyoZsp23LTQPAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="metroButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Malebutton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3TAAAN0wG91RxqAAAAAmJL
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3QAAAN0AEQbD0HAAAAAmJL
         R0QAAKqNIzIAAAAHdElNRQfgBBEUHiLdu1KPAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA0LTE3VDIw
         OjMwOjM0KzAyOjAwM/pyTAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wNC0xN1QyMDozMDozNCswMjow
         MEKnyvAAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAFzUlEQVR4Xu2bWaiuYxTH

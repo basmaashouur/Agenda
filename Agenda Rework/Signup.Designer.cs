@@ -29,51 +29,54 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.Femalebutton = new MetroFramework.Controls.MetroButton();
+            this.Malebutton = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.Namefield = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.pass1 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.pass2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.Errorlabel = new MetroFramework.Controls.MetroLabel();
+            this.adduserbutton = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
-            // metroButton1
+            // Femalebutton
             // 
-            this.metroButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("metroButton1.BackgroundImage")));
-            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButton1.ForeColor = System.Drawing.Color.White;
-            this.metroButton1.Location = new System.Drawing.Point(286, 141);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(114, 112);
-            this.metroButton1.TabIndex = 0;
-            this.metroButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton1.UseCustomBackColor = true;
-            this.metroButton1.UseCustomForeColor = true;
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.UseStyleColors = true;
+            this.Femalebutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Femalebutton.BackgroundImage")));
+            this.Femalebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Femalebutton.ForeColor = System.Drawing.Color.White;
+            this.Femalebutton.Location = new System.Drawing.Point(286, 141);
+            this.Femalebutton.Name = "Femalebutton";
+            this.Femalebutton.Size = new System.Drawing.Size(114, 112);
+            this.Femalebutton.TabIndex = 0;
+            this.Femalebutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Femalebutton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Femalebutton.UseCustomBackColor = true;
+            this.Femalebutton.UseCustomForeColor = true;
+            this.Femalebutton.UseSelectable = true;
+            this.Femalebutton.UseStyleColors = true;
+            this.Femalebutton.Click += new System.EventHandler(this.Femalebutton_Click);
             // 
-            // metroButton2
+            // Malebutton
             // 
-            this.metroButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("metroButton2.BackgroundImage")));
-            this.metroButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.metroButton2.ForeColor = System.Drawing.Color.White;
-            this.metroButton2.Location = new System.Drawing.Point(166, 141);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(114, 112);
-            this.metroButton2.TabIndex = 1;
-            this.metroButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton2.UseCustomBackColor = true;
-            this.metroButton2.UseCustomForeColor = true;
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.UseStyleColors = true;
+            this.Malebutton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Malebutton.BackgroundImage")));
+            this.Malebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Malebutton.ForeColor = System.Drawing.Color.White;
+            this.Malebutton.Location = new System.Drawing.Point(166, 141);
+            this.Malebutton.Name = "Malebutton";
+            this.Malebutton.Size = new System.Drawing.Size(114, 112);
+            this.Malebutton.TabIndex = 1;
+            this.Malebutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Malebutton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Malebutton.UseCustomBackColor = true;
+            this.Malebutton.UseCustomForeColor = true;
+            this.Malebutton.UseSelectable = true;
+            this.Malebutton.UseStyleColors = true;
+            this.Malebutton.Click += new System.EventHandler(this.Malebutton_Click);
             // 
             // metroLabel1
             // 
@@ -123,39 +126,39 @@
             this.metroLabel4.Text = "And my name is.. ";
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // metroTextBox1
+            // Namefield
             // 
             // 
             // 
             // 
-            this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(201, 1);
-            this.metroTextBox1.CustomButton.Name = "";
-            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox1.CustomButton.TabIndex = 1;
-            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox1.CustomButton.UseSelectable = true;
-            this.metroTextBox1.CustomButton.Visible = false;
-            this.metroTextBox1.Lines = new string[] {
+            this.Namefield.CustomButton.Image = null;
+            this.Namefield.CustomButton.Location = new System.Drawing.Point(201, 1);
+            this.Namefield.CustomButton.Name = "";
+            this.Namefield.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.Namefield.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.Namefield.CustomButton.TabIndex = 1;
+            this.Namefield.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Namefield.CustomButton.UseSelectable = true;
+            this.Namefield.CustomButton.Visible = false;
+            this.Namefield.Lines = new string[] {
         "Name"};
-            this.metroTextBox1.Location = new System.Drawing.Point(172, 317);
-            this.metroTextBox1.MaxLength = 32767;
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.PasswordChar = '\0';
-            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox1.SelectedText = "";
-            this.metroTextBox1.SelectionLength = 0;
-            this.metroTextBox1.SelectionStart = 0;
-            this.metroTextBox1.Size = new System.Drawing.Size(223, 23);
-            this.metroTextBox1.TabIndex = 6;
-            this.metroTextBox1.Text = "Name";
-            this.metroTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.metroTextBox1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroTextBox1.UseSelectable = true;
-            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.metroTextBox1.Click += new System.EventHandler(this.metroTextBox1_Click);
+            this.Namefield.Location = new System.Drawing.Point(172, 317);
+            this.Namefield.MaxLength = 32767;
+            this.Namefield.Name = "Namefield";
+            this.Namefield.PasswordChar = '\0';
+            this.Namefield.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Namefield.SelectedText = "";
+            this.Namefield.SelectionLength = 0;
+            this.Namefield.SelectionStart = 0;
+            this.Namefield.Size = new System.Drawing.Size(223, 23);
+            this.Namefield.TabIndex = 6;
+            this.Namefield.Text = "Name";
+            this.Namefield.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Namefield.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Namefield.UseSelectable = true;
+            this.Namefield.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.Namefield.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.Namefield.Click += new System.EventHandler(this.metroTextBox1_Click);
             // 
             // metroLabel5
             // 
@@ -199,7 +202,7 @@
             this.pass1.UseSelectable = true;
             this.pass1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.pass1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.pass1.Click += new System.EventHandler(this.metroTextBox2_Click);
+            this.pass1.Enter += new System.EventHandler(this.pass1_Enter);
             // 
             // metroLabel6
             // 
@@ -243,40 +246,52 @@
             this.pass2.UseSelectable = true;
             this.pass2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.pass2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.pass2.Click += new System.EventHandler(this.metroTextBox3_Click);
-            this.pass2.Leave += new System.EventHandler(this.metroTextBox3_Leave);
+            this.pass2.Enter += new System.EventHandler(this.pass2_Enter);
             // 
-            // metroLabel7
+            // Errorlabel
             // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.ForeColor = System.Drawing.Color.DarkRed;
-            this.metroLabel7.Location = new System.Drawing.Point(204, 538);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(23, 19);
-            this.metroLabel7.TabIndex = 11;
-            this.metroLabel7.Text = "66";
-            this.metroLabel7.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroLabel7.UseCustomBackColor = true;
-            this.metroLabel7.UseCustomForeColor = true;
-            this.metroLabel7.UseStyleColors = true;
+            this.Errorlabel.AutoSize = true;
+            this.Errorlabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.Errorlabel.Location = new System.Drawing.Point(121, 590);
+            this.Errorlabel.Name = "Errorlabel";
+            this.Errorlabel.Size = new System.Drawing.Size(37, 19);
+            this.Errorlabel.TabIndex = 11;
+            this.Errorlabel.Text = "1111";
+            this.Errorlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Errorlabel.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Errorlabel.UseCustomBackColor = true;
+            this.Errorlabel.UseCustomForeColor = true;
+            this.Errorlabel.UseStyleColors = true;
+            // 
+            // adduserbutton
+            // 
+            this.adduserbutton.Location = new System.Drawing.Point(236, 530);
+            this.adduserbutton.Name = "adduserbutton";
+            this.adduserbutton.Size = new System.Drawing.Size(94, 37);
+            this.adduserbutton.TabIndex = 12;
+            this.adduserbutton.Text = "Add User";
+            this.adduserbutton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.adduserbutton.UseSelectable = true;
+            this.adduserbutton.Click += new System.EventHandler(this.adduserbutton_Click);
             // 
             // Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(566, 656);
-            this.Controls.Add(this.metroLabel7);
+            this.Controls.Add(this.adduserbutton);
+            this.Controls.Add(this.Errorlabel);
             this.Controls.Add(this.pass2);
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.pass1);
             this.Controls.Add(this.metroLabel5);
-            this.Controls.Add(this.metroTextBox1);
+            this.Controls.Add(this.Namefield);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
-            this.Controls.Add(this.metroButton2);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.Malebutton);
+            this.Controls.Add(this.Femalebutton);
             this.Name = "Signup";
             this.Text = "Signup";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -288,17 +303,18 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroButton Femalebutton;
+        private MetroFramework.Controls.MetroButton Malebutton;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel4;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroTextBox Namefield;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroTextBox pass1;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroTextBox pass2;
-        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroLabel Errorlabel;
+        private MetroFramework.Controls.MetroButton adduserbutton;
     }
 }
