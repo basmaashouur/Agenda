@@ -38,7 +38,7 @@
       <HintPath>..\..\..\..\..\..\..\nuget\MetroModernUI.1.3.5.0\lib\net45\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework.Design">
-      <HintPath>D:\ACADEMY\MetroModernUI.1.3.5.0\MetroModernUI.1.3.5.0\lib\net20\MetroFramework.Design.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\nuget\MetroModernUI.1.3.5.0\lib\net45\MetroFramework.Design.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework.Fonts">
       <HintPath>..\..\..\..\..\..\..\nuget\MetroModernUI.1.3.5.0\lib\net45\MetroFramework.Fonts.dll</HintPath>
@@ -94,7 +94,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
@@ -108,9 +107,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Screenshot_3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
