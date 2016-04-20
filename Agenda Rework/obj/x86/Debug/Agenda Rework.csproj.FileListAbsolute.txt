@@ -13,3 +13,5 @@ C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rew
 C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda_Rework.MainForm.resources
 C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda_Rework.Signup.resources
 C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda_Rework.MainForm.af-ZA.resources
+C:\Users\Dell\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda Rework.exe
+C:\Users\Dell\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda Rework.pdb
