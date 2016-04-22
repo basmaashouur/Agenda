@@ -61,7 +61,7 @@ namespace Agenda_Rework
                 string record = sr.ReadLine();
                 while (record != null)
                 {
-                    if (record.Split('|')[0].ToLower() == Namefield.Text.ToLower())
+                    if (record.Split('|')[0].ToLower() == Namefield.Text)
                     {
                         Errorlabel.Text = "Sorry, Name already exists.";
                         Err_flag = true;

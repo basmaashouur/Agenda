@@ -45,7 +45,6 @@ namespace Agenda_Rework
             this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.MenuLabel = new System.Windows.Forms.Label();
             this.DetailsLabel = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.GeneralSetting = new MetroFramework.Controls.MetroPanel();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
@@ -87,18 +86,17 @@ namespace Agenda_Rework
             ((System.ComponentModel.ISupportInitialize)(this.MSM1)).BeginInit();
             this.GeneralSetting.SuspendLayout();
             this.Accountsetting.SuspendLayout();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.MSM1)).BeginInit();
->>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
             this.SuspendLayout();
             // 
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
+            this.metroTile1.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.metroTile1, "metroTile1");
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile1.TileImage")));
             this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile1.UseCustomForeColor = true;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.UseTileImage = true;
             this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
@@ -107,21 +105,27 @@ namespace Agenda_Rework
             // 
             this.metroTile2.ActiveControl = null;
             resources.ApplyResources(this.metroTile2, "metroTile2");
+            this.metroTile2.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.metroTile2.ForeColor = System.Drawing.Color.White;
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile2.TileImage")));
             this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile2.UseCustomForeColor = true;
             this.metroTile2.UseSelectable = true;
+            this.metroTile2.UseStyleColors = true;
             this.metroTile2.UseTileImage = true;
             this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile3
             // 
             this.metroTile3.ActiveControl = null;
+            this.metroTile3.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.metroTile3, "metroTile3");
             this.metroTile3.Name = "metroTile3";
             this.metroTile3.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile3.TileImage")));
             this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile3.UseCustomForeColor = true;
             this.metroTile3.UseSelectable = true;
             this.metroTile3.UseTileImage = true;
             this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
@@ -129,10 +133,12 @@ namespace Agenda_Rework
             // metroTile4
             // 
             this.metroTile4.ActiveControl = null;
+            this.metroTile4.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.metroTile4, "metroTile4");
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile4.TileImage")));
             this.metroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile4.UseCustomForeColor = true;
             this.metroTile4.UseSelectable = true;
             this.metroTile4.UseTileImage = true;
             this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
@@ -140,20 +146,25 @@ namespace Agenda_Rework
             // metroTile5
             // 
             this.metroTile5.ActiveControl = null;
+            this.metroTile5.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.metroTile5, "metroTile5");
             this.metroTile5.Name = "metroTile5";
             this.metroTile5.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile5.TileImage")));
             this.metroTile5.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile5.UseCustomForeColor = true;
             this.metroTile5.UseSelectable = true;
+            this.metroTile5.UseStyleColors = true;
             this.metroTile5.UseTileImage = true;
             // 
             // metroTile7
             // 
             this.metroTile7.ActiveControl = null;
+            this.metroTile7.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.metroTile7, "metroTile7");
             this.metroTile7.Name = "metroTile7";
             this.metroTile7.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile7.TileImage")));
             this.metroTile7.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile7.UseCustomForeColor = true;
             this.metroTile7.UseSelectable = true;
             this.metroTile7.UseTileImage = true;
             this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
@@ -161,10 +172,12 @@ namespace Agenda_Rework
             // metroTile8
             // 
             this.metroTile8.ActiveControl = null;
+            this.metroTile8.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.metroTile8, "metroTile8");
             this.metroTile8.Name = "metroTile8";
             this.metroTile8.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile8.TileImage")));
             this.metroTile8.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile8.UseCustomForeColor = true;
             this.metroTile8.UseSelectable = true;
             this.metroTile8.UseTileImage = true;
             this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
@@ -172,10 +185,12 @@ namespace Agenda_Rework
             // metroTile9
             // 
             this.metroTile9.ActiveControl = null;
+            this.metroTile9.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.metroTile9, "metroTile9");
             this.metroTile9.Name = "metroTile9";
             this.metroTile9.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile9.TileImage")));
             this.metroTile9.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile9.UseCustomForeColor = true;
             this.metroTile9.UseSelectable = true;
             this.metroTile9.UseTileImage = true;
             this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
@@ -183,11 +198,15 @@ namespace Agenda_Rework
             // metroTile10
             // 
             this.metroTile10.ActiveControl = null;
+            this.metroTile10.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.metroTile10.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.metroTile10, "metroTile10");
             this.metroTile10.Name = "metroTile10";
             this.metroTile10.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile10.TileImage")));
             this.metroTile10.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile10.UseCustomForeColor = true;
             this.metroTile10.UseSelectable = true;
+            this.metroTile10.UseStyleColors = true;
             this.metroTile10.UseTileImage = true;
             this.metroTile10.Click += new System.EventHandler(this.metroTile10_Click);
             // 
@@ -206,10 +225,12 @@ namespace Agenda_Rework
             // metroTile6
             // 
             this.metroTile6.ActiveControl = null;
+            this.metroTile6.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.metroTile6, "metroTile6");
             this.metroTile6.Name = "metroTile6";
             this.metroTile6.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile6.TileImage")));
             this.metroTile6.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile6.UseCustomForeColor = true;
             this.metroTile6.UseSelectable = true;
             this.metroTile6.UseTileImage = true;
             this.metroTile6.Click += new System.EventHandler(this.metroTile6_Click);
@@ -229,7 +250,6 @@ namespace Agenda_Rework
             this.DetailsLabel.ForeColor = System.Drawing.Color.White;
             this.DetailsLabel.Name = "DetailsLabel";
             // 
-<<<<<<< HEAD
             // metroLabel1
             // 
             resources.ApplyResources(this.metroLabel1, "metroLabel1");
@@ -776,21 +796,16 @@ namespace Agenda_Rework
             this.Delete.UseSelectable = true;
             this.Delete.Click += new System.EventHandler(this.metroButton6_Click);
             // 
-=======
->>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackImage = ((System.Drawing.Image)(resources.GetObject("$this.BackImage")));
             this.BackMaxSize = 1135;
-<<<<<<< HEAD
             this.Controls.Add(this.Accountsetting);
             this.Controls.Add(this.GeneralSettingButton);
             this.Controls.Add(this.AccountSettingButton);
             this.Controls.Add(this.metroLabel1);
-=======
->>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
             this.Controls.Add(this.DetailsLabel);
             this.Controls.Add(this.MenuLabel);
             this.Controls.Add(this.label1);
@@ -807,17 +822,12 @@ namespace Agenda_Rework
             this.Controls.Add(this.GeneralSetting);
             this.Name = "MainForm";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
-<<<<<<< HEAD
             this.TransparencyKey = System.Drawing.Color.CornflowerBlue;
             ((System.ComponentModel.ISupportInitialize)(this.MSM1)).EndInit();
             this.GeneralSetting.ResumeLayout(false);
             this.GeneralSetting.PerformLayout();
             this.Accountsetting.ResumeLayout(false);
             this.Accountsetting.PerformLayout();
-=======
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.MSM1)).EndInit();
->>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -839,7 +849,6 @@ namespace Agenda_Rework
         private MetroFramework.Controls.MetroTile metroTile6;
         private System.Windows.Forms.Label MenuLabel;
         private System.Windows.Forms.Label DetailsLabel;
-<<<<<<< HEAD
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroPanel GeneralSetting;
         private MetroFramework.Controls.MetroLabel Tiles;
@@ -878,8 +887,6 @@ namespace Agenda_Rework
         private MetroFramework.Controls.MetroButton changepp;
         private MetroFramework.Controls.MetroButton Delete;
         private MetroFramework.Controls.MetroLabel metroLabel14;
-=======
->>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
     }
 }
 

@@ -47,7 +47,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 30.75F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(106, 27);
+            this.label1.Location = new System.Drawing.Point(106, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 55);
             this.label1.TabIndex = 0;
@@ -56,7 +56,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(118, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(118, 146);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(134, 141);
             this.pictureBox1.TabIndex = 1;
@@ -66,11 +66,10 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel1.ForeColor = System.Drawing.Color.White;
-            this.metroLabel1.Location = new System.Drawing.Point(158, 288);
+            this.metroLabel1.Location = new System.Drawing.Point(164, 298);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(54, 25);
+            this.metroLabel1.Size = new System.Drawing.Size(41, 19);
             this.metroLabel1.TabIndex = 2;
             this.metroLabel1.Text = "Login";
             this.metroLabel1.UseCustomBackColor = true;
@@ -78,10 +77,10 @@
             // 
             // LoginButton
             // 
-            this.LoginButton.Location = new System.Drawing.Point(107, 404);
+            this.LoginButton.Location = new System.Drawing.Point(107, 408);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(75, 23);
-            this.LoginButton.TabIndex = 9;
+            this.LoginButton.TabIndex = 5;
             this.LoginButton.Text = "Login";
             this.LoginButton.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.LoginButton.UseSelectable = true;
@@ -105,7 +104,7 @@
             this.Unamefield.CustomButton.Visible = false;
             this.Unamefield.Lines = new string[] {
         "Username"};
-            this.Unamefield.Location = new System.Drawing.Point(116, 326);
+            this.Unamefield.Location = new System.Drawing.Point(116, 336);
             this.Unamefield.MaxLength = 32767;
             this.Unamefield.Name = "Unamefield";
             this.Unamefield.PasswordChar = '\0';
@@ -126,10 +125,10 @@
             // 
             // NewuserButton
             // 
-            this.NewuserButton.Location = new System.Drawing.Point(188, 404);
+            this.NewuserButton.Location = new System.Drawing.Point(188, 408);
             this.NewuserButton.Name = "NewuserButton";
             this.NewuserButton.Size = new System.Drawing.Size(75, 23);
-            this.NewuserButton.TabIndex = 5;
+            this.NewuserButton.TabIndex = 8;
             this.NewuserButton.Text = "New User";
             this.NewuserButton.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.NewuserButton.UseSelectable = true;
@@ -153,7 +152,7 @@
             this.passfield.CustomButton.Visible = false;
             this.passfield.Lines = new string[] {
         "Password"};
-            this.passfield.Location = new System.Drawing.Point(116, 355);
+            this.passfield.Location = new System.Drawing.Point(116, 365);
             this.passfield.MaxLength = 32767;
             this.passfield.Name = "passfield";
             this.passfield.PasswordChar = '\0';
@@ -162,7 +161,7 @@
             this.passfield.SelectionLength = 0;
             this.passfield.SelectionStart = 0;
             this.passfield.Size = new System.Drawing.Size(136, 23);
-            this.passfield.TabIndex = 8;
+            this.passfield.TabIndex = 9;
             this.passfield.Text = "Password";
             this.passfield.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.passfield.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -174,10 +173,10 @@
             // 
             // metroProgressSpinner1
             // 
-            this.metroProgressSpinner1.Location = new System.Drawing.Point(124, 484);
+            this.metroProgressSpinner1.Location = new System.Drawing.Point(167, 490);
             this.metroProgressSpinner1.Maximum = 100;
             this.metroProgressSpinner1.Name = "metroProgressSpinner1";
-            this.metroProgressSpinner1.Size = new System.Drawing.Size(123, 37);
+            this.metroProgressSpinner1.Size = new System.Drawing.Size(36, 36);
             this.metroProgressSpinner1.TabIndex = 10;
             this.metroProgressSpinner1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroProgressSpinner1.UseSelectable = true;
@@ -186,11 +185,11 @@
             // loadinglabel
             // 
             this.loadinglabel.AutoSize = true;
-            this.loadinglabel.Location = new System.Drawing.Point(147, 449);
+            this.loadinglabel.Location = new System.Drawing.Point(145, 463);
             this.loadinglabel.Name = "loadinglabel";
-            this.loadinglabel.Size = new System.Drawing.Size(77, 19);
+            this.loadinglabel.Size = new System.Drawing.Size(80, 19);
             this.loadinglabel.TabIndex = 11;
-            this.loadinglabel.Text = "Logging in..";
+            this.loadinglabel.Text = "Logging in...";
             this.loadinglabel.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.loadinglabel.Visible = false;
             // 
