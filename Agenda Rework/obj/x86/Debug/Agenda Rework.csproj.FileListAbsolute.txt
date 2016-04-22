@@ -26,3 +26,18 @@ C:\Users\Dell\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rework.
 C:\Users\Dell\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rework.MainForm.af-ZA.resources
 C:\Users\Dell\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda Rework.csproj.GenerateResource.Cache
 C:\Users\Dell\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\af-ZA\Agenda Rework.resources.dll
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda Rework.exe
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda Rework.pdb
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\bin\Debug\Agenda Rework.exe
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\bin\Debug\Agenda Rework.pdb
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\bin\Debug\af-ZA\Agenda Rework.resources.dll
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\bin\Debug\MetroFramework.dll
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda Rework.csprojResolveAssemblyReference.cache
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rework.MainForm.resources
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rework.LoginForm.resources
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rework.Properties.Resources.resources
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rework.Signup.resources
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rework.MainForm.af-ZA.resources
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda Rework.csproj.GenerateResource.Cache
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\af-ZA\Agenda Rework.resources.dll
