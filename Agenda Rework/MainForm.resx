@@ -172,7 +172,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <metadata name="metroTile2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -232,7 +232,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="metroTile3.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 29</value>
@@ -248,53 +248,62 @@
   </data>
   <data name="metroTile3.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3VAAAN1QE91ljxAAAAB3RJ
-        TUUH4AQRDRgKraPFDAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAo9SURBVHhe
-        1Zt3rH1FFYURFEXsgoIlKmLDaIwawN4LivwQNWBERUQlKkGJwRJRo0aIBcESNWBDCE2BoFIVovCHihKM
-        gA2Cjap07MpzfS93ke2wzpxz73uPhJV8yX17Zvbse+45c2b2zFtvaWnptmIr8R7xDfF98Stxwww+Y6OM
-        OtRNPladaFxF+CKfFL8V84o2nxBrejGicRXYXBwi/iOsv4kTxDvFK8VTxINn8BkbZdShroUPfOEz9bUi
-        onEFbCA+IP4q0M3im2KduKtIbRLUpQ1t8YHwiW/6SG0WIhoX5F7iVGGdLp4kUt2Wh4idxSOKzeADXxZ9
-        0FdbbyGicQEeLX4j0LVie5HqDXGSsC4VjxdtHXziG9EXfbZ15iYa54RAHNivxSNFqtfjReJMceOMbUWq
-        h2/6QPS54osQjXNwb+ER/izB36neVNYX9fbmef+q4NVoG33QF6LvFfUZjRO5o/ieQBeJ+4hUbyVsKv4p
-        EBeCPrHTF30iYrB9bqJxIh8U6DrxGJHqrAa8Hv8h0IliI4GdPukbEUvbbhLROIH7i5sEeoVIdVaT5wpm
-        jOhkYTt9I2IhptpmEtE4gc8J9AORyteCJ4rrBdpd2E4MiJhq/UlE4wgPE/8STFC2ntluK94sEG8AzwyJ
-        gViIidjaNl2icQRmY+g4kcrXkjuIMwT6lrCdWBCx1fqjROMI5wr0KpHK15qHC+6Ay4qNWBCx1bqjRGMH
-        pqyIV9PdRapjnix2E2P1FoHbv06C6MOvS2KsdbtEY4e3C1RH4iF+ItDVgltz1ebvAxATIsZUHonGDh79
-        9xOpvPIs8QthMYJ/RjxN8CynNiuBmNBcb4No7HC8QG8QqbyFL7qj+Kmo+oP4lFjNtwgxIWJM5ZFo7PBj
-        gV4gUvk9BYuaw4rN0OZw4QmNxWBG0O8VzxP4aNtOAf+IGFN5JBo7/EmgoTTVkQKdI1I53EW8XBwlPJus
-        4p3+S/F18WGxt9hVbCe4Y3gLMJ60jxExIWKs9i7R2IFbF6VEx04CMSGZmggh8/McwWqPd7kv8BRdJeqb
-        gD4RMdY+ukRjBy9D+bLVzpL0coFIgtayeXmA4A5hUPus4E5h8sOAeqWoeUZes27nH4AYq78u0diBZxiR
-        vKx2AkVchPref6DYUxwrviZeJ3rLZsqoQ13avEXgo9YhZ8CqENU1ATEhYqz1u0Rjh48J9GlR7X8U6LXC
-        tqeKa0Sri8VDBXXuNIPP2ChrhQ982S9wcdAewjZiQsRY63aJxg78IqiuA0hTIdbsB4uDBO9iZ4b5Uu8S
-        B4g/Y5B4Tr8i+HLAZ48v1KEubXxB8IVPfIPTYiyOHIfXA8Ro2yjR2OHFAv1M2MYIPaQfCm5Z12XQu0IM
-        ibKaPqctPob0RuG6xISI0bZRorEDWRj0F2HbSzBIpKg+NOPfGKRXi9oePiIQbwvW+MBnRFlbHx8In/bv
-        dBh9ux4xobmyU9HYYWNh8Rnb45b/Wlo6T7geryj0bGGbeatA7AXaxmdEWa0L+ED4tI2+EH3zd4prEtE4
-        gq+0J0NMShBzfdf5DgaJiZFtxuuDjwvb+Iwoq3XBkyt82ubMkBdYngTVO3MS0TiCnzVmZraRy0ebCP6m
-        DHHbks1lacyz+V2B2Pt7lHB7Pns/kDrUpQ1t/Ti5P/pA9On27q+OTZOIxhE82vJ+ty0lSQ7EEMQXqoOX
-        weYv2wpfrpeSH8SC6ttpEtE4Qnrfvh+D1C6CmNGRtOSWZRbHr8svW+tUKKMOdWlDW3zUOvSB6NO2ofnJ
-        KNE4wjsEOkLYxgIF8Q6/s6j1YZH1f2qDb88l6NN2YkHEVuuPEo0j8Iugs0W1OwPEsrbaVxN8I/qqdmJB
-        7d0ySjSO4FUX099q91ycwYkFTS2r8AwzhW03Mrj9WRVuWWwVfHqwbdcinopPXYXeQjSO4FH4v8LzeGAR
-        5EBYy9c2Fe8k055Z3hfE7zHMxHQ6tcMnoo+64CIGfCG/hSYTjRPwPL/diHiZQCQ1thG1zOwgfJagFcdj
-        UlYXXz4pQh+1jBgQMVX7JKJxAhcKlGZ6RwtEVojsT1sObHu/UDBofVSQzxvKMuEDXwjfbblnisTUlo0S
-        jRNwCvr1oi3j2fZIzdb1PGeDWmjrLXh8pg1QYkBTUvW3Ihon8CWBhtLjjxVObzFCcxIs1etBG4/u+MJn
-        qud0ODGl8i7ROIH3CXSoSOVAgsPPOplgFjp1aTwEdajr7DE+nEBJEAMiplTeJRon8BqBOL2Vys39hJMX
-        iF9yf8ES+B7C9fiMjbKaGKUtPqrPFp8gI6ZU3iUaJ/B0gfh1UnnFF8B7d1W8Ev1arHJd2iafFd9lxJTK
-        u0TjBHg+EWmw3jTXkyZeYdzGvALJ53mQrMJGGXWo69deb3JD3z4+s8g4s/AF4DXmldtmItVhp+YSgTgH
-        2JYzr99iRlo/+OwgPoZ2ougbEctCJ0ijcSK/E8gTHk5qcb6P6Ww92cnKbugi9aANbS184ps+fCqMvhGx
-        tO0nEY0T8dmcYwTHV9M2F2L+vuhr0HP/VvRFn/SNFj6rFI0dGJHfLZic/F204iwAzzGvMbatnNH9tkj+
-        etAG8eXwhU9800crYiEmYht7a/wf0Rhg6+vLwgOORRqbrSs2MxFZmg2F2zGY+X1eNzHMg2a0duoikiJ1
-        bUDC83yBLhD03abZiZFYJ50gjcYGlqH1oMOPxNtEnbuT0/MXZVOjtve+PSJxwYqNXwk/Fp+xUebkBqo7
-        TcAYgBgb6oUhFmKqPom5tyxfJhoLLDX5dxbkUX/oWCwnOhFL02eKWsYEx+1Jb9snv5bvKmxOpzMPSKc/
-        8ctgmNJq9fis+8JnXbLfimgs7CUQ21dPED4YzW5tcvx5gX4u0v698/+I5SuHncDLa3SamPfEObH4+Bwx
-        Eqv3JfkOqc0y0Vjw8+UdHgYjn8/9omjr31c4Z7+LaMvBW2mM5ByGBr9BKEttni945vnXmlROLIjYfGbA
-        O0p8h7b+LUTjDB+J43byAWUgB+8MTDqR5dUZ09ihU9zOGfDF/eXTWh/w4eluPQ9gfHKNmOpeBTH7URg8
-        OheNM14qUN3yMvsIxGGFZ4hadjfhCcybRC0zBMQePwECn4eCxAfCZ5tboG8fmCCmWgbeQuO7tGXLROMM
-        rjY6RaRyDjEgnvd2mcuIjFjZ1bunxY9AKgPaenWIz1pGn/SNiKWWGWJH6c5ZJhpnjF0ABi9f/XauXm/b
-        hdbpM5x3wFf7OPlUGDH44HTLml4A8H+J7SvaMp/lZ+t7kfOAtPG2efqfBPpExNCWmTW/AEx60NCWlCc1
-        rOh6Z4NaqOuVZN2BqniLrp14VVZ0ATishHpZH18Ajq2kcpa5PlnGs8yp0VSvQh0/97RNS2WgT9S7AF6V
-        8l1SefcCMNtCTFI4pMRefIt/BTY3Ujmw0+MNE8QtyxbXOsE/SgKfsfmRQrShbfIJ9ImIIZUTsydYgxuy
-        0TiDmZx/vduz+A6DWatoLLA4YTvap0JuTyJmYu9sly2t9z/OfKU2BumQMwAAAABJRU5ErkJggg==
+        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
 </value>
   </data>
   <data name="&gt;&gt;metroTile3.Name" xml:space="preserve">
@@ -307,7 +316,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="metroTile4.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 154</value>
@@ -371,7 +380,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile4.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="metroTile5.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 449</value>
@@ -422,7 +431,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile5.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="metroTile7.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 29</value>
@@ -463,7 +472,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile7.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="metroTile8.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 29</value>
@@ -515,7 +524,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile8.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="metroTile9.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 449</value>
@@ -586,7 +595,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile9.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="metroTile10.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 154</value>
@@ -646,7 +655,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile10.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <metadata name="MSM1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -655,7 +664,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>33</value>
+    <value>35</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -35865,17 +35874,397 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1136, 603</value>
   </data>
+  <data name="Delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 273</value>
+  </data>
+  <data name="Delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 23</value>
+  </data>
+  <data name="Delete.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="Delete.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;Delete.Name" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;Delete.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;Delete.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;Delete.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="metroLabel14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="metroLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 271</value>
+  </data>
+  <data name="metroLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 25</value>
+  </data>
+  <data name="metroLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="metroLabel14.Text" xml:space="preserve">
+    <value>Delete Your Account</value>
+  </data>
+  <data name="&gt;&gt;metroLabel14.Name" xml:space="preserve">
+    <value>metroLabel14</value>
+  </data>
+  <data name="&gt;&gt;metroLabel14.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel14.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;metroLabel14.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="metroLabel13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="metroLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 178</value>
+  </data>
+  <data name="metroLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 25</value>
+  </data>
+  <data name="metroLabel13.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="metroLabel13.Text" xml:space="preserve">
+    <value>Change Profile Picture:</value>
+  </data>
+  <data name="&gt;&gt;metroLabel13.Name" xml:space="preserve">
+    <value>metroLabel13</value>
+  </data>
+  <data name="&gt;&gt;metroLabel13.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel13.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;metroLabel13.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="changepp.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="changepp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 180</value>
+  </data>
+  <data name="changepp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 23</value>
+  </data>
+  <data name="changepp.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="changepp.Text" xml:space="preserve">
+    <value>Change PP</value>
+  </data>
+  <data name="&gt;&gt;changepp.Name" xml:space="preserve">
+    <value>changepp</value>
+  </data>
+  <data name="&gt;&gt;changepp.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;changepp.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;changepp.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="metroButton5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>499, 254</value>
+  </data>
+  <data name="metroButton5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 23</value>
+  </data>
+  <data name="metroButton5.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="metroButton5.Text" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="&gt;&gt;metroButton5.Name" xml:space="preserve">
+    <value>metroButton5</value>
+  </data>
+  <data name="&gt;&gt;metroButton5.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroButton5.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;metroButton5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="metroLabel12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="metroLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 88</value>
+  </data>
+  <data name="metroLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 25</value>
+  </data>
+  <data name="metroLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="metroLabel12.Text" xml:space="preserve">
+    <value>Old Password:</value>
+  </data>
+  <data name="&gt;&gt;metroLabel12.Name" xml:space="preserve">
+    <value>metroLabel12</value>
+  </data>
+  <data name="&gt;&gt;metroLabel12.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel12.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;metroLabel12.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="metroLabel11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="metroLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 135</value>
+  </data>
+  <data name="metroLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 25</value>
+  </data>
+  <data name="metroLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="metroLabel11.Text" xml:space="preserve">
+    <value>New Password:</value>
+  </data>
+  <data name="&gt;&gt;metroLabel11.Name" xml:space="preserve">
+    <value>metroLabel11</value>
+  </data>
+  <data name="&gt;&gt;metroLabel11.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel11.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;metroLabel11.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="metroLabel10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="metroLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 190</value>
+  </data>
+  <data name="metroLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 25</value>
+  </data>
+  <data name="metroLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="metroLabel10.Text" xml:space="preserve">
+    <value>Confirm Password:</value>
+  </data>
+  <data name="&gt;&gt;metroLabel10.Name" xml:space="preserve">
+    <value>metroLabel10</value>
+  </data>
+  <data name="&gt;&gt;metroLabel10.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel10.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;metroLabel10.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 1</value>
+  </data>
+  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 21</value>
+  </data>
+  <data name="resource.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="confirm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 190</value>
+  </data>
+  <data name="confirm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 23</value>
+  </data>
+  <data name="confirm.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;confirm.Name" xml:space="preserve">
+    <value>confirm</value>
+  </data>
+  <data name="&gt;&gt;confirm.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;confirm.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;confirm.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="resource.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Location1" type="System.Drawing.Point, System.Drawing">
+    <value>83, 1</value>
+  </data>
+  <data name="resource.Size1" type="System.Drawing.Size, System.Drawing">
+    <value>21, 21</value>
+  </data>
+  <data name="resource.TabIndex1" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="newbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 137</value>
+  </data>
+  <data name="newbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 23</value>
+  </data>
+  <data name="newbox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;newbox.Name" xml:space="preserve">
+    <value>newbox</value>
+  </data>
+  <data name="&gt;&gt;newbox.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;newbox.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;newbox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="resource.Image2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Location2" type="System.Drawing.Point, System.Drawing">
+    <value>83, 1</value>
+  </data>
+  <data name="resource.Size2" type="System.Drawing.Size, System.Drawing">
+    <value>21, 21</value>
+  </data>
+  <data name="resource.TabIndex2" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="oldbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>572, 90</value>
+  </data>
+  <data name="oldbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 23</value>
+  </data>
+  <data name="oldbox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;oldbox.Name" xml:space="preserve">
+    <value>oldbox</value>
+  </data>
+  <data name="&gt;&gt;oldbox.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;oldbox.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;oldbox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="metroLabel9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="metroLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 90</value>
+  </data>
+  <data name="metroLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 25</value>
+  </data>
+  <data name="metroLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="metroLabel9.Text" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="&gt;&gt;metroLabel9.Name" xml:space="preserve">
+    <value>metroLabel9</value>
+  </data>
+  <data name="&gt;&gt;metroLabel9.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel9.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;metroLabel9.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="metroLabel8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="metroLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>430, 25</value>
+  </data>
+  <data name="metroLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 50</value>
+  </data>
+  <data name="metroLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="metroLabel8.Text" xml:space="preserve">
+    <value>Change the Password.
+</value>
+  </data>
+  <data name="&gt;&gt;metroLabel8.Name" xml:space="preserve">
+    <value>metroLabel8</value>
+  </data>
+  <data name="&gt;&gt;metroLabel8.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel8.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;metroLabel8.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="metroButton3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="metroButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>689, 564</value>
+    <value>57, 127</value>
   </data>
   <data name="metroButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 23</value>
+    <value>169, 23</value>
   </data>
   <data name="metroButton3.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>4</value>
   </data>
   <data name="metroButton3.Text" xml:space="preserve">
-    <value>Account Setting 👆</value>
+    <value>Change Username</value>
   </data>
   <data name="&gt;&gt;metroButton3.Name" xml:space="preserve">
     <value>metroButton3</value>
@@ -35884,10 +36273,308 @@
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;metroButton3.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>Accountsetting</value>
   </data>
   <data name="&gt;&gt;metroButton3.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="resource.Image3" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.Location3" type="System.Drawing.Point, System.Drawing">
+    <value>85, 1</value>
+  </data>
+  <data name="resource.Size3" type="System.Drawing.Size, System.Drawing">
+    <value>21, 21</value>
+  </data>
+  <data name="resource.TabIndex3" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="newusername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 90</value>
+  </data>
+  <data name="newusername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 23</value>
+  </data>
+  <data name="newusername.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;newusername.Name" xml:space="preserve">
+    <value>newusername</value>
+  </data>
+  <data name="&gt;&gt;newusername.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;newusername.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;newusername.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="metroLabel7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="metroLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="metroLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 50</value>
+  </data>
+  <data name="metroLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="metroLabel7.Text" xml:space="preserve">
+    <value>Change the Username.
+Enter the New Username.</value>
+  </data>
+  <data name="&gt;&gt;metroLabel7.Name" xml:space="preserve">
+    <value>metroLabel7</value>
+  </data>
+  <data name="&gt;&gt;metroLabel7.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel7.Parent" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;metroLabel7.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="Accountsetting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 213</value>
+  </data>
+  <data name="Accountsetting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>689, 355</value>
+  </data>
+  <data name="Accountsetting.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;Accountsetting.Name" xml:space="preserve">
+    <value>Accountsetting</value>
+  </data>
+  <data name="&gt;&gt;Accountsetting.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroPanel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;Accountsetting.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Accountsetting.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="GeneralSettingButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>596, 574</value>
+  </data>
+  <data name="GeneralSettingButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="GeneralSettingButton.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="GeneralSettingButton.Text" xml:space="preserve">
+    <value>General Setting 👆</value>
+  </data>
+  <data name="&gt;&gt;GeneralSettingButton.Name" xml:space="preserve">
+    <value>GeneralSettingButton</value>
+  </data>
+  <data name="&gt;&gt;GeneralSettingButton.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;GeneralSettingButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GeneralSettingButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="AccountSettingButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>828, 574</value>
+  </data>
+  <data name="AccountSettingButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="AccountSettingButton.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="AccountSettingButton.Text" xml:space="preserve">
+    <value>Account Setting 👆</value>
+  </data>
+  <data name="&gt;&gt;AccountSettingButton.Name" xml:space="preserve">
+    <value>AccountSettingButton</value>
+  </data>
+  <data name="&gt;&gt;AccountSettingButton.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;AccountSettingButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AccountSettingButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="metroLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="metroLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-15, -15</value>
+  </data>
+  <data name="metroLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 19</value>
+  </data>
+  <data name="metroLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="metroLabel1.Text" xml:space="preserve">
+    <value>metroLabel1</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Name" xml:space="preserve">
+    <value>metroLabel1</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;metroLabel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="DetailsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DetailsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Light, 14pt</value>
+  </data>
+  <data name="DetailsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 238</value>
+  </data>
+  <data name="DetailsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 150</value>
+  </data>
+  <data name="DetailsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="DetailsLabel.Text" xml:space="preserve">
+    <value>Welcome to Agenda 1.0
+This application is designed to be virtual personal assistant to help you with your
+daily tasks (Think Jarvis from Iron man).
+In the left side you'll find a great set of options to help you achieve everyday goals
+such as setting a checklist, making an appointment and alarm you when its time 
+or keep you updated on where you are in your self studying endeavor.</value>
+  </data>
+  <data name="&gt;&gt;DetailsLabel.Name" xml:space="preserve">
+    <value>DetailsLabel</value>
+  </data>
+  <data name="&gt;&gt;DetailsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DetailsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DetailsLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="MenuLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MenuLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Light, 20.25pt</value>
+  </data>
+  <data name="MenuLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MenuLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 173</value>
+  </data>
+  <data name="MenuLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 37</value>
+  </data>
+  <data name="MenuLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="MenuLabel.Text" xml:space="preserve">
+    <value>Welcome Kate</value>
+  </data>
+  <data name="&gt;&gt;MenuLabel.Name" xml:space="preserve">
+    <value>MenuLabel</value>
+  </data>
+  <data name="&gt;&gt;MenuLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MenuLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Light, 70pt</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 29</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>645, 125</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Wednesday, 20</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="metroTile6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 154</value>
+  </data>
+  <data name="metroTile6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 119</value>
+  </data>
+  <data name="metroTile6.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="metroTile6.Text" xml:space="preserve">
+    <value>To do</value>
+  </data>
+  <data name="metroTile6.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3VAAAN1QE91ljxAAAAB3RJ
+        TUUH4AQRDRYPQ0ocDQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHWSURBVHhe
+        7ds/SkNBEMfx+O8aHsDKC9hZCRaCnYKFp7IQLLRLI6QRBEvFyiPYaWmnovL8fYttdjZxHxLYZWbgM+CM
+        LJuJebhJ3mQYBtdIG3IqTzI27uVY1sQs3gMSD574lOeRvoU4ELN4D0g88zz4zVQcYVuIGyn1m0cieDZN
+        s9KHvGa1bpCIGICYZqVFA5hJy3HLJollDeBMWLtVF2yS4Id887XiJSAxgKzWDRIRAxDTrLRoAFOh36oZ
+        mySWNYBzodeqSzZJxEtATLMSA3jJat0gcaTlVMfBxvzCH3aFuJZSv3kkzvMp0sWhVoo9MYv3gMSbGZzn
+        OdLmF4lF+LPnmefBr4hZvAfFoifFoifFoifFoiekdTmSByld6ed5lzs5lFUxi/eAdCLEj7yNlGJfzOI9
+        ID3Kl2yl4gg7QvDWV6nfPBIRZwExzUoxAJk3gCspXTtaMWWTRAxA8s3XipeAxACyWjdIRAxATLNSXAQl
+        BpDVukEiXA/A/WHI/XHY/RsirhWLnhSLnhSLnpDcfzTm/sNR9x+PE//9V7jrL0gQcRgS06y0aADuvyTl
+        /mtyzSMRMQAxzUoxAIkBZLXE/Q0T7m+ZaR6JcD0A9zdOur911v3N044Nk197eugF/8M47gAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;metroTile6.Name" xml:space="preserve">
+    <value>metroTile6</value>
+  </data>
+  <data name="&gt;&gt;metroTile6.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroTile6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;metroTile6.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="metroButton4.Location" type="System.Drawing.Point, System.Drawing">
     <value>537, 301</value>
@@ -36431,173 +37118,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GeneralSetting.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="metroLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="metroLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-15, -15</value>
-  </data>
-  <data name="metroLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 19</value>
-  </data>
-  <data name="metroLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="metroLabel1.Text" xml:space="preserve">
-    <value>metroLabel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Name" xml:space="preserve">
-    <value>metroLabel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="DetailsLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="DetailsLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Light, 14pt</value>
-  </data>
-  <data name="DetailsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 238</value>
-  </data>
-  <data name="DetailsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>668, 150</value>
-  </data>
-  <data name="DetailsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="DetailsLabel.Text" xml:space="preserve">
-    <value>Welcome to Agenda 1.0
-This application is designed to be virtual personal assistant to help you with your
-daily tasks (Think Jarvis from Iron man).
-In the left side you'll find a great set of options to help you achieve everyday goals
-such as setting a checklist, making an appointment and alarm you when its time 
-or keep you updated on where you are in your self studying endeavor.</value>
-  </data>
-  <data name="&gt;&gt;DetailsLabel.Name" xml:space="preserve">
-    <value>DetailsLabel</value>
-  </data>
-  <data name="&gt;&gt;DetailsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DetailsLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DetailsLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="MenuLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="MenuLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Light, 20.25pt</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MenuLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="MenuLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 173</value>
-  </data>
-  <data name="MenuLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 37</value>
-  </data>
-  <data name="MenuLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="MenuLabel.Text" xml:space="preserve">
-    <value>Welcome Kate</value>
-  </data>
-  <data name="&gt;&gt;MenuLabel.Name" xml:space="preserve">
-    <value>MenuLabel</value>
-  </data>
-  <data name="&gt;&gt;MenuLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MenuLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Light, 70pt</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 29</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 125</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Wednesday, 20</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="metroTile6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 154</value>
-  </data>
-  <data name="metroTile6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 119</value>
-  </data>
-  <data name="metroTile6.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="metroTile6.Text" xml:space="preserve">
-    <value>To do</value>
-  </data>
-  <data name="metroTile6.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3VAAAN1QE91ljxAAAAB3RJ
-        TUUH4AQRDRYPQ0ocDQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHWSURBVHhe
-        7ds/SkNBEMfx+O8aHsDKC9hZCRaCnYKFp7IQLLRLI6QRBEvFyiPYaWmnovL8fYttdjZxHxLYZWbgM+CM
-        LJuJebhJ3mQYBtdIG3IqTzI27uVY1sQs3gMSD574lOeRvoU4ELN4D0g88zz4zVQcYVuIGyn1m0cieDZN
-        s9KHvGa1bpCIGICYZqVFA5hJy3HLJollDeBMWLtVF2yS4Id887XiJSAxgKzWDRIRAxDTrLRoAFOh36oZ
-        mySWNYBzodeqSzZJxEtATLMSA3jJat0gcaTlVMfBxvzCH3aFuJZSv3kkzvMp0sWhVoo9MYv3gMSbGZzn
-        OdLmF4lF+LPnmefBr4hZvAfFoifFoifFoifFoiekdTmSByld6ed5lzs5lFUxi/eAdCLEj7yNlGJfzOI9
-        ID3Kl2yl4gg7QvDWV6nfPBIRZwExzUoxAJk3gCspXTtaMWWTRAxA8s3XipeAxACyWjdIRAxATLNSXAQl
-        BpDVukEiXA/A/WHI/XHY/RsirhWLnhSLnhSLnpDcfzTm/sNR9x+PE//9V7jrL0gQcRgS06y0aADuvyTl
-        /mtyzSMRMQAxzUoxAIkBZLXE/Q0T7m+ZaR6JcD0A9zdOur911v3N044Nk197eugF/8M47gAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;metroTile6.Name" xml:space="preserve">
-    <value>metroTile6</value>
-  </data>
-  <data name="&gt;&gt;metroTile6.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroTile6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;metroTile6.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;MSM1.Name" xml:space="preserve">
     <value>MSM1</value>

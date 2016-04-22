@@ -6,17 +6,20 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
-
+using System.IO;
+using Microsoft.VisualBasic;
 namespace Agenda_Rework
 {
     public partial class MainForm : MetroFramework.Forms.MetroForm
     {
+       
         public MainForm()
         {
             InitializeComponent();
             GeneralSetting.Hide();
-
+            AccountSettingButton.Hide();
+            GeneralSettingButton.Hide();
+            Accountsetting.Hide();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -86,7 +89,9 @@ namespace Agenda_Rework
             MenuLabel.Text = metroTile9.Text;
             DetailsLabel.Hide();
             GeneralSetting.Show();
-
+            AccountSettingButton.Show();
+            GeneralSettingButton.Show();
+            Accountsetting.Show();
         }
 
         private void GeneralSetting_Paint(object sender, PaintEventArgs e)
@@ -205,6 +210,123 @@ namespace Agenda_Rework
                 Image myimage = new Bitmap(path);
                 this.BackgroundImage = myimage;
             }
+        }
+
+        private void MenuLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GeneralSettingButton_Click(object sender, EventArgs e)
+        {
+            Accountsetting.Hide();
+            GeneralSetting.Show();
+        }
+
+        private void Accountsetting_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void AccountSettingButton_Click(object sender, EventArgs e)
+        {
+            GeneralSetting.Hide();
+            Accountsetting.Show();
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            string contents = null;
+            StreamReader srr = File.OpenText("Users.dat");
+            contents = srr.ReadToEnd();
+            string name = contents.Split('|')[0];
+            srr.Close();
+            StreamWriter sw = File.CreateText("Users.dat");
+            sw.Write(contents.Replace(name, newusername.Text));
+            sw.Close();
+        }
+
+        private void metroButton5_Click(object sender, EventArgs e)
+        {
+            if (newbox.Text!=confirm.Text)
+            {
+                MessageBox.Show("Password Don't Match,Try Again...");
+            }
+            string contents = null;
+            StreamReader srr = File.OpenText("Users.dat");
+            contents = srr.ReadToEnd();
+            srr.Close();
+            StreamWriter sw = File.CreateText("Users.dat");
+            sw.Write(contents.Replace(oldbox.Text, confirm.Text));
+            sw.Close();
+        }
+
+        private void newbox_Click(object sender, EventArgs e)
+        {
+            newbox.Clear();
+            newbox.UseSystemPasswordChar = true;
+        }
+
+        private void confirm_Click(object sender, EventArgs e)
+        {
+            confirm.Clear();
+            confirm.UseSystemPasswordChar = true;
+        }
+
+        private void oldbox_Click(object sender, EventArgs e)
+        {
+            oldbox.Clear();
+            oldbox.UseSystemPasswordChar = true;
+        }
+        OpenFileDialog ofd = new OpenFileDialog();
+        private void changepp_Click(object sender, EventArgs e)
+        {
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                metroTile3.TileImage = Image.FromFile(ofd.FileName);
+            }
+        }
+
+        private void metroButton6_Click(object sender, EventArgs e)
+        {
+            string myname = Interaction.InputBox("Enter Your Username","");
+            StreamReader sr = new StreamReader("Users.dat");
+            int countline = 0;
+            string line;
+
+            while ((line = sr.ReadLine()) != null)
+            {
+                countline++;
+                if (line.Contains(myname))
+                {
+                    break;
+                }
+            }
+            sr.Close();
+
+            string linee = null;
+            int linenumber = 0;
+            using (StreamReader reader = new StreamReader("Users.dat"))
+            {
+                using (StreamWriter writer = new StreamWriter("new.dat"))
+                {
+                    while ((linee = reader.ReadLine()) != null)
+                    {
+                        linenumber++;
+                        if (linenumber == countline)
+                        {
+                            continue;
+                        }
+                        writer.WriteLine(linee);
+                    }
+                }
+            }
+            File.Delete("Users.dat");
+            File.Move("new.dat", "Users.dat");
+
+            MetroFramework.MetroMessageBox.Show(this, "We will miss you, "+myname+ " 💔", "Bye..", MessageBoxButtons.OK);
+
+           
         }
 
 

@@ -90,9 +90,9 @@ namespace Agenda_Rework
                     metroProgressSpinner1.Visible = false;
                     record = login_sr.ReadLine();
                 }
-  
-          
-                
+
+                login_fs.Close();
+                login_sr.Close();
 
             }
             else {

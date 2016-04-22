@@ -64,9 +64,28 @@ namespace Agenda_Rework
             this.metroCheckBox2 = new MetroFramework.Controls.MetroCheckBox();
             this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
             this.Tiles = new MetroFramework.Controls.MetroLabel();
+            this.AccountSettingButton = new MetroFramework.Controls.MetroButton();
+            this.Accountsetting = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
+            this.changepp = new MetroFramework.Controls.MetroButton();
+            this.metroButton5 = new MetroFramework.Controls.MetroButton();
+            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.confirm = new MetroFramework.Controls.MetroTextBox();
+            this.newbox = new MetroFramework.Controls.MetroTextBox();
+            this.oldbox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.newusername = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.GeneralSettingButton = new MetroFramework.Controls.MetroButton();
+            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
+            this.Delete = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.MSM1)).BeginInit();
             this.GeneralSetting.SuspendLayout();
+            this.Accountsetting.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTile1
@@ -222,6 +241,7 @@ namespace Agenda_Rework
             this.MenuLabel.BackColor = System.Drawing.Color.Transparent;
             this.MenuLabel.ForeColor = System.Drawing.Color.White;
             this.MenuLabel.Name = "MenuLabel";
+            this.MenuLabel.Click += new System.EventHandler(this.MenuLabel_Click);
             // 
             // DetailsLabel
             // 
@@ -469,16 +489,312 @@ namespace Agenda_Rework
             this.Tiles.UseCustomBackColor = true;
             this.Tiles.UseCustomForeColor = true;
             // 
+            // AccountSettingButton
+            // 
+            this.AccountSettingButton.BackColor = System.Drawing.Color.Transparent;
+            this.AccountSettingButton.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.AccountSettingButton.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.AccountSettingButton, "AccountSettingButton");
+            this.AccountSettingButton.Name = "AccountSettingButton";
+            this.AccountSettingButton.UseCustomBackColor = true;
+            this.AccountSettingButton.UseCustomForeColor = true;
+            this.AccountSettingButton.UseSelectable = true;
+            this.AccountSettingButton.Click += new System.EventHandler(this.AccountSettingButton_Click);
+            // 
+            // Accountsetting
+            // 
+            this.Accountsetting.BackColor = System.Drawing.Color.Transparent;
+            this.Accountsetting.Controls.Add(this.Delete);
+            this.Accountsetting.Controls.Add(this.metroLabel14);
+            this.Accountsetting.Controls.Add(this.metroLabel13);
+            this.Accountsetting.Controls.Add(this.changepp);
+            this.Accountsetting.Controls.Add(this.metroButton5);
+            this.Accountsetting.Controls.Add(this.metroLabel12);
+            this.Accountsetting.Controls.Add(this.metroLabel11);
+            this.Accountsetting.Controls.Add(this.metroLabel10);
+            this.Accountsetting.Controls.Add(this.confirm);
+            this.Accountsetting.Controls.Add(this.newbox);
+            this.Accountsetting.Controls.Add(this.oldbox);
+            this.Accountsetting.Controls.Add(this.metroLabel9);
+            this.Accountsetting.Controls.Add(this.metroLabel8);
+            this.Accountsetting.Controls.Add(this.metroButton3);
+            this.Accountsetting.Controls.Add(this.newusername);
+            this.Accountsetting.Controls.Add(this.metroLabel7);
+            this.Accountsetting.HorizontalScrollbarBarColor = true;
+            this.Accountsetting.HorizontalScrollbarHighlightOnWheel = false;
+            this.Accountsetting.HorizontalScrollbarSize = 10;
+            resources.ApplyResources(this.Accountsetting, "Accountsetting");
+            this.Accountsetting.Name = "Accountsetting";
+            this.Accountsetting.UseCustomBackColor = true;
+            this.Accountsetting.UseCustomForeColor = true;
+            this.Accountsetting.VerticalScrollbarBarColor = true;
+            this.Accountsetting.VerticalScrollbarHighlightOnWheel = false;
+            this.Accountsetting.VerticalScrollbarSize = 10;
+            this.Accountsetting.Paint += new System.Windows.Forms.PaintEventHandler(this.Accountsetting_Paint);
+            // 
+            // metroLabel13
+            // 
+            resources.ApplyResources(this.metroLabel13, "metroLabel13");
+            this.metroLabel13.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel13.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel13.ForeColor = System.Drawing.Color.White;
+            this.metroLabel13.Name = "metroLabel13";
+            this.metroLabel13.UseCustomBackColor = true;
+            this.metroLabel13.UseCustomForeColor = true;
+            // 
+            // changepp
+            // 
+            resources.ApplyResources(this.changepp, "changepp");
+            this.changepp.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.changepp.ForeColor = System.Drawing.Color.White;
+            this.changepp.Name = "changepp";
+            this.changepp.UseCustomBackColor = true;
+            this.changepp.UseCustomForeColor = true;
+            this.changepp.UseSelectable = true;
+            this.changepp.Click += new System.EventHandler(this.changepp_Click);
+            // 
+            // metroButton5
+            // 
+            this.metroButton5.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.metroButton5.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.metroButton5, "metroButton5");
+            this.metroButton5.Name = "metroButton5";
+            this.metroButton5.UseCustomBackColor = true;
+            this.metroButton5.UseCustomForeColor = true;
+            this.metroButton5.UseSelectable = true;
+            this.metroButton5.Click += new System.EventHandler(this.metroButton5_Click);
+            // 
+            // metroLabel12
+            // 
+            resources.ApplyResources(this.metroLabel12, "metroLabel12");
+            this.metroLabel12.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel12.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel12.ForeColor = System.Drawing.Color.White;
+            this.metroLabel12.Name = "metroLabel12";
+            this.metroLabel12.UseCustomBackColor = true;
+            this.metroLabel12.UseCustomForeColor = true;
+            // 
+            // metroLabel11
+            // 
+            resources.ApplyResources(this.metroLabel11, "metroLabel11");
+            this.metroLabel11.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel11.ForeColor = System.Drawing.Color.White;
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.UseCustomBackColor = true;
+            this.metroLabel11.UseCustomForeColor = true;
+            // 
+            // metroLabel10
+            // 
+            resources.ApplyResources(this.metroLabel10, "metroLabel10");
+            this.metroLabel10.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel10.ForeColor = System.Drawing.Color.White;
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.UseCustomBackColor = true;
+            this.metroLabel10.UseCustomForeColor = true;
+            // 
+            // confirm
+            // 
+            this.confirm.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            // 
+            // 
+            // 
+            this.confirm.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.confirm.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode")));
+            this.confirm.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
+            this.confirm.CustomButton.Name = "";
+            this.confirm.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
+            this.confirm.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.confirm.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
+            this.confirm.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.confirm.CustomButton.UseSelectable = true;
+            this.confirm.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
+            this.confirm.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.confirm.Lines = new string[0];
+            resources.ApplyResources(this.confirm, "confirm");
+            this.confirm.MaxLength = 32767;
+            this.confirm.Name = "confirm";
+            this.confirm.PasswordChar = '\0';
+            this.confirm.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.confirm.SelectedText = "";
+            this.confirm.SelectionLength = 0;
+            this.confirm.SelectionStart = 0;
+            this.confirm.UseCustomBackColor = true;
+            this.confirm.UseCustomForeColor = true;
+            this.confirm.UseSelectable = true;
+            this.confirm.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.confirm.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.confirm.Click += new System.EventHandler(this.confirm_Click);
+            // 
+            // newbox
+            // 
+            this.newbox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            // 
+            // 
+            // 
+            this.newbox.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            this.newbox.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location1")));
+            this.newbox.CustomButton.Name = "";
+            this.newbox.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size1")));
+            this.newbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.newbox.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex1")));
+            this.newbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.newbox.CustomButton.UseSelectable = true;
+            this.newbox.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible1")));
+            this.newbox.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.newbox.Lines = new string[0];
+            resources.ApplyResources(this.newbox, "newbox");
+            this.newbox.MaxLength = 32767;
+            this.newbox.Name = "newbox";
+            this.newbox.PasswordChar = '\0';
+            this.newbox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.newbox.SelectedText = "";
+            this.newbox.SelectionLength = 0;
+            this.newbox.SelectionStart = 0;
+            this.newbox.UseCustomBackColor = true;
+            this.newbox.UseCustomForeColor = true;
+            this.newbox.UseSelectable = true;
+            this.newbox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.newbox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.newbox.Click += new System.EventHandler(this.newbox_Click);
+            // 
+            // oldbox
+            // 
+            this.oldbox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            // 
+            // 
+            // 
+            this.oldbox.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.oldbox.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location2")));
+            this.oldbox.CustomButton.Name = "";
+            this.oldbox.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size2")));
+            this.oldbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.oldbox.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex2")));
+            this.oldbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.oldbox.CustomButton.UseSelectable = true;
+            this.oldbox.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible2")));
+            this.oldbox.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.oldbox.Lines = new string[0];
+            resources.ApplyResources(this.oldbox, "oldbox");
+            this.oldbox.MaxLength = 32767;
+            this.oldbox.Name = "oldbox";
+            this.oldbox.PasswordChar = '\0';
+            this.oldbox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.oldbox.SelectedText = "";
+            this.oldbox.SelectionLength = 0;
+            this.oldbox.SelectionStart = 0;
+            this.oldbox.UseCustomBackColor = true;
+            this.oldbox.UseCustomForeColor = true;
+            this.oldbox.UseSelectable = true;
+            this.oldbox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.oldbox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.oldbox.Click += new System.EventHandler(this.oldbox_Click);
+            // 
+            // metroLabel9
+            // 
+            resources.ApplyResources(this.metroLabel9, "metroLabel9");
+            this.metroLabel9.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel9.ForeColor = System.Drawing.Color.White;
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.UseCustomBackColor = true;
+            this.metroLabel9.UseCustomForeColor = true;
+            // 
+            // metroLabel8
+            // 
+            resources.ApplyResources(this.metroLabel8, "metroLabel8");
+            this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel8.ForeColor = System.Drawing.Color.White;
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.UseCustomBackColor = true;
+            this.metroLabel8.UseCustomForeColor = true;
+            // 
             // metroButton3
             // 
-            this.metroButton3.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.metroButton3, "metroButton3");
             this.metroButton3.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.metroButton3.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.metroButton3, "metroButton3");
             this.metroButton3.Name = "metroButton3";
             this.metroButton3.UseCustomBackColor = true;
             this.metroButton3.UseCustomForeColor = true;
             this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
+            // 
+            // newusername
+            // 
+            this.newusername.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            // 
+            // 
+            // 
+            this.newusername.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.newusername.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location3")));
+            this.newusername.CustomButton.Name = "";
+            this.newusername.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size3")));
+            this.newusername.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.newusername.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex3")));
+            this.newusername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.newusername.CustomButton.UseSelectable = true;
+            this.newusername.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible3")));
+            this.newusername.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.newusername.Lines = new string[0];
+            resources.ApplyResources(this.newusername, "newusername");
+            this.newusername.MaxLength = 32767;
+            this.newusername.Name = "newusername";
+            this.newusername.PasswordChar = '\0';
+            this.newusername.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.newusername.SelectedText = "";
+            this.newusername.SelectionLength = 0;
+            this.newusername.SelectionStart = 0;
+            this.newusername.UseCustomBackColor = true;
+            this.newusername.UseCustomForeColor = true;
+            this.newusername.UseSelectable = true;
+            this.newusername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.newusername.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // metroLabel7
+            // 
+            resources.ApplyResources(this.metroLabel7, "metroLabel7");
+            this.metroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel7.ForeColor = System.Drawing.Color.White;
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.UseCustomBackColor = true;
+            this.metroLabel7.UseCustomForeColor = true;
+            // 
+            // GeneralSettingButton
+            // 
+            this.GeneralSettingButton.BackColor = System.Drawing.Color.Transparent;
+            this.GeneralSettingButton.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.GeneralSettingButton.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.GeneralSettingButton, "GeneralSettingButton");
+            this.GeneralSettingButton.Name = "GeneralSettingButton";
+            this.GeneralSettingButton.UseCustomBackColor = true;
+            this.GeneralSettingButton.UseCustomForeColor = true;
+            this.GeneralSettingButton.UseSelectable = true;
+            this.GeneralSettingButton.Click += new System.EventHandler(this.GeneralSettingButton_Click);
+            // 
+            // metroLabel14
+            // 
+            resources.ApplyResources(this.metroLabel14, "metroLabel14");
+            this.metroLabel14.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel14.ForeColor = System.Drawing.Color.White;
+            this.metroLabel14.Name = "metroLabel14";
+            this.metroLabel14.UseCustomBackColor = true;
+            this.metroLabel14.UseCustomForeColor = true;
+            // 
+            // Delete
+            // 
+            this.Delete.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.Delete.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.Delete, "Delete");
+            this.Delete.Name = "Delete";
+            this.Delete.UseCustomBackColor = true;
+            this.Delete.UseCustomForeColor = true;
+            this.Delete.UseSelectable = true;
+            this.Delete.Click += new System.EventHandler(this.metroButton6_Click);
             // 
             // MainForm
             // 
@@ -486,8 +802,9 @@ namespace Agenda_Rework
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackImage = ((System.Drawing.Image)(resources.GetObject("$this.BackImage")));
             this.BackMaxSize = 1135;
-            this.Controls.Add(this.metroButton3);
-            this.Controls.Add(this.GeneralSetting);
+            this.Controls.Add(this.Accountsetting);
+            this.Controls.Add(this.GeneralSettingButton);
+            this.Controls.Add(this.AccountSettingButton);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.DetailsLabel);
             this.Controls.Add(this.MenuLabel);
@@ -502,13 +819,15 @@ namespace Agenda_Rework
             this.Controls.Add(this.metroTile9);
             this.Controls.Add(this.metroTile10);
             this.Controls.Add(this.metroTile1);
+            this.Controls.Add(this.GeneralSetting);
             this.Name = "MainForm";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.TransparencyKey = System.Drawing.Color.CornflowerBlue;
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MSM1)).EndInit();
             this.GeneralSetting.ResumeLayout(false);
             this.GeneralSetting.PerformLayout();
+            this.Accountsetting.ResumeLayout(false);
+            this.Accountsetting.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -548,8 +867,26 @@ namespace Agenda_Rework
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroComboBox metroComboBox1;
         private MetroFramework.Controls.MetroLabel metroLabel6;
-        private MetroFramework.Controls.MetroButton metroButton3;
+        private MetroFramework.Controls.MetroButton AccountSettingButton;
         private MetroFramework.Controls.MetroButton metroButton4;
+        private MetroFramework.Controls.MetroButton GeneralSettingButton;
+        private MetroFramework.Controls.MetroPanel Accountsetting;
+        private MetroFramework.Controls.MetroButton metroButton3;
+        private MetroFramework.Controls.MetroTextBox newusername;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroLabel metroLabel12;
+        private MetroFramework.Controls.MetroLabel metroLabel11;
+        private MetroFramework.Controls.MetroLabel metroLabel10;
+        private MetroFramework.Controls.MetroTextBox confirm;
+        private MetroFramework.Controls.MetroTextBox newbox;
+        private MetroFramework.Controls.MetroTextBox oldbox;
+        private MetroFramework.Controls.MetroLabel metroLabel9;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private MetroFramework.Controls.MetroButton metroButton5;
+        private MetroFramework.Controls.MetroLabel metroLabel13;
+        private MetroFramework.Controls.MetroButton changepp;
+        private MetroFramework.Controls.MetroButton Delete;
+        private MetroFramework.Controls.MetroLabel metroLabel14;
     }
 }
 
