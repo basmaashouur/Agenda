@@ -15,7 +15,12 @@ namespace Agenda_Rework
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new MainForm());
+=======
+            Application.Run(new LoginForm());
+            Application.Exit();
+>>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
         }
     }
 }

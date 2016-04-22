@@ -6,27 +6,45 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using System.IO;
 using Microsoft.VisualBasic;
+=======
+
+>>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
 namespace Agenda_Rework
 {
     public partial class MainForm : MetroFramework.Forms.MetroForm
     {
+<<<<<<< HEAD
        
         public MainForm()
+=======
+        public string username, gender;
+
+        public MainForm(string username, string gender)
+>>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
         {
+            this.username = username;
+            this.gender = gender;
             InitializeComponent();
+<<<<<<< HEAD
             GeneralSetting.Hide();
             AccountSettingButton.Hide();
             GeneralSettingButton.Hide();
             Accountsetting.Hide();
+=======
+          
+            
+
+>>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             this.StyleManager = MSM1;
             label1.Text = System.DateTime.Now.DayOfWeek.ToString() + ", " + System.DateTime.Now.Day.ToString();
-            MenuLabel.Text = "Welcome "+ Agenda_Rework.LoginForm.userdata.current_user;
+            MenuLabel.Text = "Welcome " + username ;
             
 
 
@@ -87,6 +105,7 @@ namespace Agenda_Rework
         private void metroTile9_Click(object sender, EventArgs e)
         {
             MenuLabel.Text = metroTile9.Text;
+<<<<<<< HEAD
             DetailsLabel.Hide();
             GeneralSetting.Show();
             AccountSettingButton.Show();
@@ -210,6 +229,8 @@ namespace Agenda_Rework
                 Image myimage = new Bitmap(path);
                 this.BackgroundImage = myimage;
             }
+=======
+>>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
         }
 
         private void MenuLabel_Click(object sender, EventArgs e)
@@ -332,29 +353,5 @@ namespace Agenda_Rework
 
        
        
-
-
-       
-    }
-    public enum MetroColorStyle
-    {
-        Default =0,
-        Black=1,
-        White=2,
-        Silver=3,
-        Blue=4,
-        Green=5,
-        Lime=6,
-        Teal=7,
-        Orange=8,
-        Brown=9,
-        Pink=10,
-        Magenta=11,
-        Purple=12,
-        Red=13,
-        Yellow=14,
-    
-    
-    
     }
 }

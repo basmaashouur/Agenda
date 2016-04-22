@@ -7,17 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
 
 namespace Agenda_Rework
 {
+
     
 
 
     public partial class LoginForm : MetroFramework.Forms.MetroForm
     {
-        public static class userdata {
-            public static string current_user, user_gender; 
-                    }
+        bool errflag = false;
+
+        public class loadingthread
+        {
+
+         /**   public void showmain()
+            {
+
+                MainForm MF = new MainForm(user,);
+                MF.Show();
+
+            }**/
+
+        }
+        
+            
 
 
         public LoginForm()
@@ -54,10 +69,7 @@ namespace Agenda_Rework
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            loadinglabel.Visible = true;
-            metroProgressSpinner1.Visible = true;
-
-
+            bool found_flag = false;
             if (File.Exists("Users.dat"))
             {
                 FileStream login_fs = new FileStream("Users.dat", FileMode.Open, FileAccess.Read);
@@ -66,39 +78,34 @@ namespace Agenda_Rework
                 string record = login_sr.ReadLine();
                 while (record != null)
                 {
-                    if (record.Split('|')[0].ToLower() == Unamefield.Text.ToLower())
+                    string current_user = record.Split('|')[0];
+                    string current_password = record.Split('|')[1];
+                    string current_gender = record.Split('|')[2];
+                    if (current_user.ToLower() == Unamefield.Text.ToLower() && current_password == passfield.Text)
                     {
-                        if (record.Split('|')[1] == passfield.Text)
-                        {
-       
-                            Agenda_Rework.LoginForm.userdata.current_user = record.Split('|')[0];
-                            Agenda_Rework.LoginForm.userdata.user_gender = record.Split('|')[2];
-                                                      
-                            MainForm MF = new MainForm();
-                            MF.Show();
-                            while (true) {
-                                if (MF != null) { this.Hide(); break; }
-                            
-                            }
-                            break;
-                            
-                        }
-
+                        found_flag = true;
+                        MainForm MF = new MainForm(current_user, current_gender);
+                        MF.Show();
+                        this.Hide();
+                        break;
                     }
-                    MetroFramework.MetroMessageBox.Show(this, "Wrong username or password.", "Oops..", MessageBoxButtons.OK);
-                    loadinglabel.Visible = false;
-                    metroProgressSpinner1.Visible = false;
                     record = login_sr.ReadLine();
+                    
                 }
+<<<<<<< HEAD
 
                 login_fs.Close();
                 login_sr.Close();
+=======
+                if (!found_flag) { MetroFramework.MetroMessageBox.Show(this, "Wrong username or password.", "Oops..", MessageBoxButtons.OK); }
+          
+                
+>>>>>>> f9d8cd3e06baa2a54f0c82d5b3373435776747ee
 
             }
             else {
              MetroFramework.MetroMessageBox.Show(this,"Database is empty, Please create at least 1 account first.","First time?",MessageBoxButtons.OK);
-             loadinglabel.Visible = false;
-             metroProgressSpinner1.Visible = false;
+            
             }
         }
 
@@ -107,6 +114,8 @@ namespace Agenda_Rework
             passfield.Clear();
             passfield.UseSystemPasswordChar = true;
         }
+
+       
 
        
 
