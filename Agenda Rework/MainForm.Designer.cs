@@ -66,6 +66,8 @@ namespace Agenda_Rework
             this.Tiles = new MetroFramework.Controls.MetroLabel();
             this.AccountSettingButton = new MetroFramework.Controls.MetroButton();
             this.Accountsetting = new MetroFramework.Controls.MetroPanel();
+            this.Delete = new MetroFramework.Controls.MetroButton();
+            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
             this.changepp = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
@@ -81,8 +83,6 @@ namespace Agenda_Rework
             this.newusername = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.GeneralSettingButton = new MetroFramework.Controls.MetroButton();
-            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
-            this.Delete = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.MSM1)).BeginInit();
             this.GeneralSetting.SuspendLayout();
             this.Accountsetting.SuspendLayout();
@@ -532,6 +532,27 @@ namespace Agenda_Rework
             this.Accountsetting.VerticalScrollbarSize = 10;
             this.Accountsetting.Paint += new System.Windows.Forms.PaintEventHandler(this.Accountsetting_Paint);
             // 
+            // Delete
+            // 
+            this.Delete.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.Delete.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.Delete, "Delete");
+            this.Delete.Name = "Delete";
+            this.Delete.UseCustomBackColor = true;
+            this.Delete.UseCustomForeColor = true;
+            this.Delete.UseSelectable = true;
+            this.Delete.Click += new System.EventHandler(this.metroButton6_Click);
+            // 
+            // metroLabel14
+            // 
+            resources.ApplyResources(this.metroLabel14, "metroLabel14");
+            this.metroLabel14.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel14.ForeColor = System.Drawing.Color.White;
+            this.metroLabel14.Name = "metroLabel14";
+            this.metroLabel14.UseCustomBackColor = true;
+            this.metroLabel14.UseCustomForeColor = true;
+            // 
             // metroLabel13
             // 
             resources.ApplyResources(this.metroLabel13, "metroLabel13");
@@ -775,27 +796,6 @@ namespace Agenda_Rework
             this.GeneralSettingButton.UseSelectable = true;
             this.GeneralSettingButton.Click += new System.EventHandler(this.GeneralSettingButton_Click);
             // 
-            // metroLabel14
-            // 
-            resources.ApplyResources(this.metroLabel14, "metroLabel14");
-            this.metroLabel14.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel14.ForeColor = System.Drawing.Color.White;
-            this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.UseCustomBackColor = true;
-            this.metroLabel14.UseCustomForeColor = true;
-            // 
-            // Delete
-            // 
-            this.Delete.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.Delete.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.Delete, "Delete");
-            this.Delete.Name = "Delete";
-            this.Delete.UseCustomBackColor = true;
-            this.Delete.UseCustomForeColor = true;
-            this.Delete.UseSelectable = true;
-            this.Delete.Click += new System.EventHandler(this.metroButton6_Click);
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -823,6 +823,7 @@ namespace Agenda_Rework
             this.Name = "MainForm";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.TransparencyKey = System.Drawing.Color.CornflowerBlue;
+            this.Load += new System.EventHandler(this.MainForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.MSM1)).EndInit();
             this.GeneralSetting.ResumeLayout(false);
             this.GeneralSetting.PerformLayout();

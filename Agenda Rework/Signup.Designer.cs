@@ -254,9 +254,8 @@
             this.Errorlabel.ForeColor = System.Drawing.Color.DarkRed;
             this.Errorlabel.Location = new System.Drawing.Point(121, 590);
             this.Errorlabel.Name = "Errorlabel";
-            this.Errorlabel.Size = new System.Drawing.Size(37, 19);
+            this.Errorlabel.Size = new System.Drawing.Size(0, 0);
             this.Errorlabel.TabIndex = 11;
-            this.Errorlabel.Text = "1111";
             this.Errorlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Errorlabel.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Errorlabel.UseCustomBackColor = true;

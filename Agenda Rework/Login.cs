@@ -7,18 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
 
 namespace Agenda_Rework
 {
+
     
 
 
     public partial class LoginForm : MetroFramework.Forms.MetroForm
     {
-        public static class userdata {
-            public static string current_user, user_gender; 
-                    }
-
+        public static bool errflag;
+        public static string current_user, current_password, current_gender;
+        int i = 0;
+        string[] loading_text = { "Logging in...",
+                                  "Watering the garden...", 
+                                  "Feeding the squirrels...", 
+                                  "Painting the sky...", 
+                                  "Doing something unnecessary...", 
+                                  "You're awesome for waiting for so long!" };
+        
 
         public LoginForm()
         {
@@ -54,10 +62,7 @@ namespace Agenda_Rework
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            loadinglabel.Visible = true;
-            metroProgressSpinner1.Visible = true;
-
-
+            bool found_flag = false;
             if (File.Exists("Users.dat"))
             {
                 FileStream login_fs = new FileStream("Users.dat", FileMode.Open, FileAccess.Read);
@@ -66,47 +71,53 @@ namespace Agenda_Rework
                 string record = login_sr.ReadLine();
                 while (record != null)
                 {
-                    if (record.Split('|')[0].ToLower() == Unamefield.Text.ToLower())
+                     current_user = record.Split('|')[0];
+                     current_password = record.Split('|')[1];
+                     current_gender = record.Split('|')[2];
+                    if (current_user.ToLower() == Unamefield.Text.ToLower() && current_password == passfield.Text)
                     {
-                        if (record.Split('|')[1] == passfield.Text)
-                        {
-       
-                            Agenda_Rework.LoginForm.userdata.current_user = record.Split('|')[0];
-                            Agenda_Rework.LoginForm.userdata.user_gender = record.Split('|')[2];
-                                                      
-                            MainForm MF = new MainForm();
-                            MF.Show();
-                            while (true) {
-                                if (MF != null) { this.Hide(); break; }
-                            
-                            }
-                            break;
-                            
-                        }
-
+                        found_flag = true;
+                        
+                        metroProgressSpinner1.Visible = true;
+                        timer1.Enabled = true;
+                        timer1.Start();
+                        MFthread MFT = new MFthread();
+                        Thread TX = new Thread(new ThreadStart(MFT.ShowMain));
+                        TX.Start();
+                        break;
                     }
-                    MetroFramework.MetroMessageBox.Show(this, "Wrong username or password.", "Oops..", MessageBoxButtons.OK);
-                    loadinglabel.Visible = false;
-                    metroProgressSpinner1.Visible = false;
                     record = login_sr.ReadLine();
+                    
                 }
-
-                login_fs.Close();
-                login_sr.Close();
+                if (!found_flag) { MetroFramework.MetroMessageBox.Show(this, "Wrong username or password.", "Oops..", MessageBoxButtons.OK,MessageBoxIcon.Error); }
+          
+                
 
             }
             else {
-             MetroFramework.MetroMessageBox.Show(this,"Database is empty, Please create at least 1 account first.","First time?",MessageBoxButtons.OK);
-             loadinglabel.Visible = false;
-             metroProgressSpinner1.Visible = false;
+                MetroFramework.MetroMessageBox.Show(this, "Database is empty, Please create at least 1 account first.", "First time?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            
             }
         }
 
         private void passfield_Enter(object sender, EventArgs e)
         {
+            
             passfield.Clear();
             passfield.UseSystemPasswordChar = true;
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (MFthread.load_flag == true) { this.Close(); timer1.Stop(); }
+            
+            textBox1.Text = loading_text[i];
+            i++;
+            if (i == 6) { timer1.Stop(); }
+
+        }
+
+       
 
        
 

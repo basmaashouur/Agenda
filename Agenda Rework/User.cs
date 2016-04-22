@@ -21,7 +21,7 @@ namespace Agenda_Rework
             {
                 FileStream fs = new FileStream("Users.dat", FileMode.Append, FileAccess.Write);
                 StreamWriter sw = new StreamWriter(fs);
-                sw.WriteLine(newuser.ToLower() + "|" + @newpass + "|" + newgender);
+                sw.WriteLine(newuser.ToLower() + "|" + @newpass + "|" + newgender+"^");
                 sw.Flush();
                 sw.Close();
                 fs.Close();

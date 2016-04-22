@@ -7,6 +7,7 @@ namespace Agenda_Rework
 {
     static class Program
     {
+       public static bool load_flag = false;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -15,7 +16,9 @@ namespace Agenda_Rework
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            LoginForm LF = new LoginForm();
+            Application.Run(LF);
+            Application.Exit();
         }
     }
 }

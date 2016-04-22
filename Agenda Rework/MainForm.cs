@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using Microsoft.VisualBasic;
+
 namespace Agenda_Rework
 {
     public partial class MainForm : MetroFramework.Forms.MetroForm
     {
-       
-        public MainForm()
+       public string current_user,current_gender;
+        public MainForm(string current_user, string current_gender)
         {
+            this.current_user = current_user;
+            this.current_gender = current_gender;
             InitializeComponent();
             GeneralSetting.Hide();
             AccountSettingButton.Hide();
@@ -26,7 +28,7 @@ namespace Agenda_Rework
         {
             this.StyleManager = MSM1;
             label1.Text = System.DateTime.Now.DayOfWeek.ToString() + ", " + System.DateTime.Now.Day.ToString();
-            MenuLabel.Text = "Welcome "+ Agenda_Rework.LoginForm.userdata.current_user;
+            MenuLabel.Text = "Welcome "+ this.current_user;
             
 
 
@@ -289,7 +291,7 @@ namespace Agenda_Rework
 
         private void metroButton6_Click(object sender, EventArgs e)
         {
-            string myname = Interaction.InputBox("Enter Your Username","");
+            string myname = Microsoft.VisualBasic.Interaction.InputBox("Enter Your Username", "");
             StreamReader sr = new StreamReader("Users.dat");
             int countline = 0;
             string line;
@@ -329,12 +331,16 @@ namespace Agenda_Rework
            
         }
 
+        private void MainForm_Load_1(object sender, EventArgs e)
+        {
+            this.StyleManager = MSM1;
+            label1.Text = System.DateTime.Now.DayOfWeek.ToString() + ", " + System.DateTime.Now.Day.ToString();
+            MenuLabel.Text = "Welcome " + this.current_user;
+        }
 
-       
-       
+        
 
-
-       
+  
     }
     public enum MetroColorStyle
     {
