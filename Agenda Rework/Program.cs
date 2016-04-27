@@ -16,8 +16,7 @@ namespace Agenda_Rework
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            LoginForm LF = new LoginForm();
-            Application.Run(LF);
+            Application.Run(new LoginForm());
             Application.Exit();
         }
     }

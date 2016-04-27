@@ -30,3 +30,6 @@ C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda Rew
 C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\af-ZA\Agenda Rework.resources.dll
 C:\Users\Amiurius\Documents\Visual Studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Interop.VBA.dll
 C:\Users\Amiurius\Documents\Visual Studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Debug\Agenda Rework.csproj.ResolveComReference.cache
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Interop.VBA.dll
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda Rework.csproj.ResolveComReference.cache
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rework.settings.resources

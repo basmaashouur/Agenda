@@ -49,71 +49,68 @@ namespace Agenda_Rework
 
         private void adduserbutton_Click(object sender, EventArgs e)
         {
+            bool err_flag = false;
 
             //Check if name already exists.
-
-            bool Err_flag= false;
-            if (File.Exists("Users.dat"))
+            if (!File.Exists("Users.dat"))
             {
-            FileStream fs = new FileStream("Users.dat",FileMode.Open, FileAccess.Read);
-            StreamReader sr = new StreamReader(fs);
-
-                string record = sr.ReadLine();
-                while (record != null)
+                File.Create("Users.dat");
+            }
+            if (new FileInfo("Users.dat").Length != 0)
+            {
+                using (FileStream fs = new FileStream("Users.dat", FileMode.Open, FileAccess.ReadWrite))
                 {
-                    if (record.Split('|')[0].ToLower() == Namefield.Text.ToLower())
+                    using (StreamReader sr = new StreamReader(fs))
                     {
-                        Errorlabel.Text = "Sorry, Name already exists.";
-                        Err_flag = true;
-                        break;
+                        string record = sr.ReadLine();
+                        while (record != null)
+                        {
+                            if (!record.Contains(Namefield.Text.ToLower()))
+                            {
+                                record = sr.ReadLine();
+                                continue;
+                            }
+                            else
+                            {
+                                MetroFramework.MetroMessageBox.Show(this, "Sorry, name already exists.", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                err_flag = true;
+                                break;
+                            }
+                        }
                     }
-                    record = sr.ReadLine();
 
                 }
-                sr.Close();
-                fs.Close();
-                
+            }//END OF NAME CHECK
+
+            //PASSWORD MATCH CHECK
+            if (pass1.Text != pass2.Text)
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Passwords don't match.", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                err_flag = true;
             }
-            //End of name check.
+            //END PASSWORD MATCH CHECK
 
-            //Password matching check.
-            if (pass1.Text != pass2.Text) {
-                Err_flag = true;
-                Errorlabel.Text += "\nError: Passwords Don't match, Perhaps type slower?";}
-            //End password matching check
-
-
-            //Gender specification
-            string gender;
-            if (this.female == true) { gender = "Female"; } else { gender = "Male"; }
-            //End Gender specification
-
-            //If no errors, create a new user object and call the "create" method to create a record and write it to users.dat
-            if (Err_flag == false) {
-                
-                user newuser = new user();
-                if (!newuser.create(Namefield.Text, pass1.Text, gender))
+            if (!err_flag)
+            {
+                using (FileStream fs = new FileStream("Users.dat", FileMode.Append, FileAccess.Write))
                 {
-                    IOException err = new IOException();
-                    MetroFramework.MetroMessageBox.Show(this, "Error" + err.ToString(), "Error", MessageBoxButtons.OK);
+                    string record = "";
+                    using (StreamWriter sw = new StreamWriter(fs))
+                    {
+                        
+                            record = Namefield.Text.ToLower() + '|' + pass2.Text + '|';
+                            if (female) { record += "female;"; } else { record += "male;"; }
+                      
+                        sw.Write(record);
+                        MetroFramework.MetroMessageBox.Show(this, "User Created!\nYou may now login using your new credentials", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoginForm LF = new LoginForm();
+                        LF.Show();
+                        this.Hide();
+                        
+                    }
                 }
-                else {
-                    MetroFramework.MetroMessageBox.Show(this, "User Created.\nYou may now login with your new credentials.", "Success!", MessageBoxButtons.OK);
-                    this.Hide();
-                    LoginForm LF = new LoginForm();
-                    LF.Show();
-                }
-                
-            
-            
             }
-
-
-
-
-
         }
-
 
         private void pass1_Enter(object sender, EventArgs e)
         {

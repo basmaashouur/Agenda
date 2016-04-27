@@ -27,6 +27,7 @@ namespace Agenda_Rework
                                   "Doing something unnecessary...", 
                                   "You're awesome for waiting for so long!" };
         
+        
 
         public LoginForm()
         {
@@ -62,42 +63,64 @@ namespace Agenda_Rework
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            bool found_flag = false;
             if (File.Exists("Users.dat"))
             {
-                FileStream login_fs = new FileStream("Users.dat", FileMode.Open, FileAccess.Read);
-                StreamReader login_sr = new StreamReader(login_fs);
 
-                string record = login_sr.ReadLine();
-                while (record != null)
+
+                bool found_flag = false;
+                using (FileStream fs = new FileStream("Users.dat", FileMode.Open, FileAccess.Read))
                 {
-                     current_user = record.Split('|')[0];
-                     current_password = record.Split('|')[1];
-                     current_gender = record.Split('|')[2];
-                    if (current_user.ToLower() == Unamefield.Text.ToLower() && current_password == passfield.Text)
+                    string username, pass, gender = "";
+                    using (StreamReader sr = new StreamReader(fs))
                     {
-                        found_flag = true;
-                        
-                        metroProgressSpinner1.Visible = true;
-                        timer1.Enabled = true;
-                        timer1.Start();
-                        MFthread MFT = new MFthread();
-                        Thread TX = new Thread(new ThreadStart(MFT.ShowMain));
-                        TX.Start();
-                        break;
+                        string contents = sr.ReadToEnd();
+
+                        foreach(var record in contents.Split(';'))
+                        {
+                            try
+                            {
+                                username = record.Split('|')[0];
+                                pass = record.Split('|')[1];
+                                gender = record.Split('|')[2];
+
+
+                                if (username == Unamefield.Text.ToLower() && pass == passfield.Text)
+                                {
+                                    found_flag = true;
+                                    current_user = username;
+                                    current_password = pass;
+                                    current_gender = gender;
+                                    metroProgressSpinner1.Visible = true;
+                                    timer1.Enabled = true;
+                                    timer1.Start();
+                                    MFthread MFT = new MFthread();
+                                    Thread th = new Thread(new ThreadStart(MFT.ShowMain));
+                                    th.Start();
+                                    break;
+
+                                }
+                                else { found_flag = false; }
+
+                            }
+                            catch { found_flag = false; }
+
+                        }
+                        if (!found_flag) { MetroFramework.MetroMessageBox.Show(this, "Wrong username or password.", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
+
                     }
-                    record = login_sr.ReadLine();
-                    
                 }
-                if (!found_flag) { MetroFramework.MetroMessageBox.Show(this, "Wrong username or password.", "Oops..", MessageBoxButtons.OK,MessageBoxIcon.Error); }
-          
-                
+
+
+
+
+
+
+
+
 
             }
-            else {
-                MetroFramework.MetroMessageBox.Show(this, "Database is empty, Please create at least 1 account first.", "First time?", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            
-            }
+            else { MetroFramework.MetroMessageBox.Show(this, "Database is empty, Please create at least one account first.", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error);}
         }
 
         private void passfield_Enter(object sender, EventArgs e)

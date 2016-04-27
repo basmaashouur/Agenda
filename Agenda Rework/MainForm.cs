@@ -12,7 +12,7 @@ namespace Agenda_Rework
 {
     public partial class MainForm : MetroFramework.Forms.MetroForm
     {
-       public string current_user,current_gender;
+       public string current_user="john",current_gender;
         public MainForm(string current_user, string current_gender)
         {
             this.current_user = current_user;
@@ -21,20 +21,20 @@ namespace Agenda_Rework
             GeneralSetting.Hide();
             AccountSettingButton.Hide();
             GeneralSettingButton.Hide();
-            Accountsetting.Hide();
+         //   Accountsetting.Hide();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+
+        private void MainForm_Load_1(object sender, EventArgs e)
         {
             this.StyleManager = MSM1;
             label1.Text = System.DateTime.Now.DayOfWeek.ToString() + ", " + System.DateTime.Now.Day.ToString();
-            MenuLabel.Text = "Welcome "+ this.current_user;
-            
-
-
+            MenuLabel.Text = "Welcome " + this.current_user;
+            metroTile3.Text = this.current_user;
+            /**
+             * LOAD TILE PIC FROM CONFIG FILE HERE!
+             * **/
         }
-
-       
 
         private void metroTextButton1_Click(object sender, EventArgs e)
         {
@@ -93,7 +93,7 @@ namespace Agenda_Rework
             GeneralSetting.Show();
             AccountSettingButton.Show();
             GeneralSettingButton.Show();
-            Accountsetting.Show();
+            ////Accountsetting.Show();
         }
 
         private void GeneralSetting_Paint(object sender, PaintEventArgs e)
@@ -221,7 +221,7 @@ namespace Agenda_Rework
 
         private void GeneralSettingButton_Click(object sender, EventArgs e)
         {
-            Accountsetting.Hide();
+            ////Accountsetting.Hide();
             GeneralSetting.Show();
         }
 
@@ -233,10 +233,10 @@ namespace Agenda_Rework
         private void AccountSettingButton_Click(object sender, EventArgs e)
         {
             GeneralSetting.Hide();
-            Accountsetting.Show();
+            //Accountsetting.Show();
         }
 
-        private void metroButton3_Click(object sender, EventArgs e)
+        /**private void metroButton3_Click(object sender, EventArgs e)
         {
             string contents = null;
             StreamReader srr = File.OpenText("Users.dat");
@@ -244,13 +244,13 @@ namespace Agenda_Rework
             string name = contents.Split('|')[0];
             srr.Close();
             StreamWriter sw = File.CreateText("Users.dat");
-            sw.Write(contents.Replace(name, newusername.Text));
+            sw.Write(contents.Replace(name, ""));
             sw.Close();
-        }
+        }**/
 
         private void metroButton5_Click(object sender, EventArgs e)
         {
-            if (newbox.Text!=confirm.Text)
+           // if (newbox.Text!=confirm.Text)
             {
                 MessageBox.Show("Password Don't Match,Try Again...");
             }
@@ -259,27 +259,11 @@ namespace Agenda_Rework
             contents = srr.ReadToEnd();
             srr.Close();
             StreamWriter sw = File.CreateText("Users.dat");
-            sw.Write(contents.Replace(oldbox.Text, confirm.Text));
+            sw.Write(contents.Replace("",""));
             sw.Close();
         }
 
-        private void newbox_Click(object sender, EventArgs e)
-        {
-            newbox.Clear();
-            newbox.UseSystemPasswordChar = true;
-        }
-
-        private void confirm_Click(object sender, EventArgs e)
-        {
-            confirm.Clear();
-            confirm.UseSystemPasswordChar = true;
-        }
-
-        private void oldbox_Click(object sender, EventArgs e)
-        {
-            oldbox.Clear();
-            oldbox.UseSystemPasswordChar = true;
-        }
+       
         OpenFileDialog ofd = new OpenFileDialog();
         private void changepp_Click(object sender, EventArgs e)
         {
@@ -331,12 +315,67 @@ namespace Agenda_Rework
            
         }
 
-        private void MainForm_Load_1(object sender, EventArgs e)
+        private void metroLabel14_Click(object sender, EventArgs e)
         {
-            this.StyleManager = MSM1;
-            label1.Text = System.DateTime.Now.DayOfWeek.ToString() + ", " + System.DateTime.Now.Day.ToString();
-            MenuLabel.Text = "Welcome " + this.current_user;
+
         }
+
+        private void metroLabel13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabel12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabel11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabel10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void confirm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newbox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void oldbox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newusername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+     
 
         
 
