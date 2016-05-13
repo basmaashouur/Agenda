@@ -60,7 +60,7 @@ namespace Agenda_Rework
             if (list_empty)
             {
                 foreach (var station in files.GetFiles())
-                {
+                {    //EXCEPTION HANDING HERE
                     metroComboBox1.Items.Add(station.ToString().Split('.')[0]);
                     fileswithextension.Add(station.ToString());
 
