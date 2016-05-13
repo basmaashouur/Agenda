@@ -1,0 +1,28 @@
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\bin\Release\Agenda Rework.exe
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\bin\Release\Agenda Rework.pdb
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\bin\Release\af-ZA\Agenda Rework.resources.dll
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\bin\Release\MetroFramework.dll
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Release\Agenda_Rework.Form1.resources
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Release\Agenda_Rework.Properties.Resources.resources
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Release\Agenda_Rework.Form1.af-ZA.resources
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Release\Agenda Rework.csproj.GenerateResource.Cache
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Release\af-ZA\Agenda Rework.resources.dll
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Release\Agenda Rework.exe
+C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Release\Agenda Rework.pdb
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda Rework.csproj.ResolveComReference.cache
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda Rework.exe
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda Rework.pdb
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\bin\Release\Agenda Rework.exe
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\bin\Release\Agenda Rework.pdb
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\bin\Release\af-ZA\Agenda Rework.resources.dll
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda Rework.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.MainForm.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.LoginForm.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.Properties.Resources.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.settings.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.Signup.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.WriteStuff.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.MainForm.af-ZA.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda Rework.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\af-ZA\Agenda Rework.resources.dll
