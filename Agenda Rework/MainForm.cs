@@ -7,26 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+
 
 namespace Agenda_Rework
 {
     public partial class MainForm : MetroFramework.Forms.MetroForm
     {
-       public string current_user="john",current_gender;
-        public MainForm(string current_user, string current_gender)
+       public string current_user,current_gender;
+        public MainForm()
         {
-            this.current_user = current_user;
-            this.current_gender = current_gender;
+            this.current_user = LoginForm.current_user;
+            this.current_gender = LoginForm.current_gender;
             InitializeComponent();
-            GeneralSetting.Hide();
-            AccountSettingButton.Hide();
-            GeneralSettingButton.Hide();
-         //   Accountsetting.Hide();
+            
         }
 
 
         private void MainForm_Load_1(object sender, EventArgs e)
         {
+            using (FileStream fs = new FileStream(settings.conf_file, FileMode.Open, FileAccess.Read))
+            {
+                BinaryFormatter bf = new BinaryFormatter();
+                config conf = (config)bf.Deserialize(fs);
+                MSM1.Style = (MetroFramework.MetroColorStyle)conf.style;
+            }
             this.StyleManager = MSM1;
             label1.Text = System.DateTime.Now.DayOfWeek.ToString() + ", " + System.DateTime.Now.Day.ToString();
             MenuLabel.Text = "Welcome " + this.current_user;
@@ -36,20 +42,7 @@ namespace Agenda_Rework
              * **/
         }
 
-        private void metroTextButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTile3_Click(object sender, EventArgs e)
-        {
-           
-        }
+       
 
         private void metroTile8_Click(object sender, EventArgs e)
         {
@@ -74,6 +67,7 @@ namespace Agenda_Rework
         private void metroTile10_Click(object sender, EventArgs e)
         {
             MenuLabel.Text = metroTile10.Text;
+            DetailsLabel.Text = "ZenZone puts you in your own private distractions-free bubble";
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
@@ -89,11 +83,6 @@ namespace Agenda_Rework
         private void metroTile9_Click(object sender, EventArgs e)
         {
             MenuLabel.Text = metroTile9.Text;
-            DetailsLabel.Hide();
-            GeneralSetting.Show();
-            AccountSettingButton.Show();
-            GeneralSettingButton.Show();
-            ////Accountsetting.Show();
         }
 
         private void GeneralSetting_Paint(object sender, PaintEventArgs e)
@@ -101,65 +90,6 @@ namespace Agenda_Rework
 
         }
 
-        private void metroCheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (metroCheckBox1.Checked)
-            {
-                metroTile8.Enabled = false;
-            }
-            else
-                metroTile8.Enabled = true;
-        }
-
-        private void metroCheckBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (metroCheckBox2.Checked)
-            {
-                metroTile7.Enabled = false;
-            }
-            else
-                metroTile7.Enabled = true;
-        }
-
-        private void metroCheckBox3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (metroCheckBox3.Checked)
-            {
-                metroTile6.Enabled = false;
-            }
-            else
-                metroTile6.Enabled = true;
-        }
-
-        private void metroCheckBox4_CheckedChanged(object sender, EventArgs e)
-        {
-            if (metroCheckBox4.Checked)
-            {
-                metroTile4.Enabled = false;
-            }
-            else
-                metroTile4.Enabled = true;
-        }
-
-        private void metroCheckBox5_CheckedChanged(object sender, EventArgs e)
-        {
-            if (metroCheckBox5.Checked)
-            {
-                metroTile2.Enabled = false;
-            }
-            else
-                metroTile2.Enabled = true;
-        }
-
-        private void metroCheckBox6_CheckedChanged(object sender, EventArgs e)
-        {
-            if (metroCheckBox6.Checked)
-            {
-                metroTile1.Enabled = false;
-            }
-            else
-                metroTile1.Enabled = true;
-        }
 
         private void ForeColor_Click(object sender, EventArgs e)
         {
@@ -193,75 +123,7 @@ namespace Agenda_Rework
             }
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
-        {
-            MSM1.Style = (MetroFramework.MetroColorStyle)Convert.ToInt32(metroComboBox1.Text);
-        }
 
-        private void metroButton4_Click(object sender, EventArgs e)
-        { 
-            var FD = new System.Windows.Forms.OpenFileDialog();
-            FD.Filter = "png files|*.png";
-            if (FD.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                string fileToOpen = FD.FileName;
-
-                System.IO.FileInfo File = new System.IO.FileInfo(FD.FileName);
-                BackgroundImage = Image.FromFile(FD.FileName);
-                string path = fileToOpen;
-                Image myimage = new Bitmap(path);
-                this.BackgroundImage = myimage;
-            }
-        }
-
-        private void MenuLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void GeneralSettingButton_Click(object sender, EventArgs e)
-        {
-            ////Accountsetting.Hide();
-            GeneralSetting.Show();
-        }
-
-        private void Accountsetting_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void AccountSettingButton_Click(object sender, EventArgs e)
-        {
-            GeneralSetting.Hide();
-            //Accountsetting.Show();
-        }
-
-        /**private void metroButton3_Click(object sender, EventArgs e)
-        {
-            string contents = null;
-            StreamReader srr = File.OpenText("Users.dat");
-            contents = srr.ReadToEnd();
-            string name = contents.Split('|')[0];
-            srr.Close();
-            StreamWriter sw = File.CreateText("Users.dat");
-            sw.Write(contents.Replace(name, ""));
-            sw.Close();
-        }**/
-
-        private void metroButton5_Click(object sender, EventArgs e)
-        {
-           // if (newbox.Text!=confirm.Text)
-            {
-                MessageBox.Show("Password Don't Match,Try Again...");
-            }
-            string contents = null;
-            StreamReader srr = File.OpenText("Users.dat");
-            contents = srr.ReadToEnd();
-            srr.Close();
-            StreamWriter sw = File.CreateText("Users.dat");
-            sw.Write(contents.Replace("",""));
-            sw.Close();
-        }
 
        
         OpenFileDialog ofd = new OpenFileDialog();
@@ -315,91 +177,7 @@ namespace Agenda_Rework
            
         }
 
-        private void metroLabel14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void confirm_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void newbox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void oldbox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void newusername_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroLabel7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-     
-
-        
-
   
     }
-    public enum MetroColorStyle
-    {
-        Default =0,
-        Black=1,
-        White=2,
-        Silver=3,
-        Blue=4,
-        Green=5,
-        Lime=6,
-        Teal=7,
-        Orange=8,
-        Brown=9,
-        Pink=10,
-        Magenta=11,
-        Purple=12,
-        Red=13,
-        Yellow=14,
-    
-    
-    
-    }
+
 }

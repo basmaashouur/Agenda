@@ -8,6 +8,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using MetroFramework;
 
 namespace Agenda_Rework
 {
@@ -17,10 +20,9 @@ namespace Agenda_Rework
 
 
 
-        public static string 
-                             conf_directory  =   @"d:\" + @"Agneda\" + LoginForm.current_user,
+        public static string conf_directory  =   @"d:\" + @"Agneda\" + LoginForm.current_user,
                              conf_file       =   conf_directory + @"\interface.conf";
-        public static Dictionary<string, int> conf = new Dictionary<string, int>(); 
+        config conf = new config();
 
 
 
@@ -30,43 +32,69 @@ namespace Agenda_Rework
             InitializeComponent();
         }
 
+
+
+
         private void settings_Load(object sender, EventArgs e)
         {
             //if the config file doesn't exist, load the dictionary with the 
             //configuration values and then dump them into interface.conf
+            this.StyleManager = metroStyleManager1;
             if (!Directory.Exists(conf_directory)) { Directory.CreateDirectory(conf_directory); }
-
-          if(!File.Exists(conf_file)){
-                conf.Add("Appointments",1);
-                conf.Add("todo",1);
-                conf.Add("uni_school",1);
-                conf.Add("self_study", 1);
-                conf.Add("towatch", 1);
-                conf.Add("toread", 1);
-                using (StreamWriter sr = new StreamWriter(conf_file)) {
-
-                    foreach (KeyValuePair<string, int> kvp2 in conf)
+            if (!File.Exists(conf_file))
+            {
+                try
+                {
+                    using (FileStream fs = new FileStream(conf_file, FileMode.Create, FileAccess.Write))
                     {
-                        sr.Write(kvp2.Key + "=" + kvp2.Value + ";\n");
+                        BinaryFormatter bf = new BinaryFormatter();
+                        bf.Serialize(fs, conf);
+
                     }
-                        conf.Clear();
-                    }}
+                }
+                catch (Exception err)
+                {
+                    MetroMessageBox.Show(this, "Could not create a configuration file.\nError:" + err.ToString(), "oops..", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+            //if the file already exists, read and deserialize.
+
+            using (FileStream fs = new FileStream(conf_file, FileMode.Open, FileAccess.Read))
+            {
+                BinaryFormatter bf = new BinaryFormatter();
+                conf = (config)bf.Deserialize(fs);
+                metroStyleManager1.Style = (MetroFramework.MetroColorStyle)conf.style;
 
 
-            //if the file already exists load the configuration from it into the dictionary;
-          using (FileStream fs = new FileStream(conf_file, FileMode.Open, FileAccess.Read)) {
-              using (StreamReader sr = new StreamReader(fs)) {
-                  string line = sr.ReadLine();
-                  while (line != null) {
-                      conf.Add(line.Split('=')[0],int.Parse(line.Split(':')[1]));
-                      line = sr.ReadLine();                  
-                  }
-              }
-          }
-          
-        
-        
-        
+                //excuse the "if block".
+                if (conf.Appointments) appoint_check.Checked = true;
+                if (conf.self_study) slfstd_check.Checked = true;
+                if (conf.todo) todo_check.Checked = true;
+                if (conf.towatch) towatch_check.Checked = true;
+                if (conf.uni_school) uni_check.Checked = true;
+                if (conf.toread) tord_check.Checked = true;
+            }
+        }
+
+
+
+        private void apply_btn_Click(object sender, EventArgs e)
+        {//if the apply button gives you trouble then create the conf object outside then re-assign it here and up there
+            try
+            {
+                using (FileStream fs = new FileStream(conf_file, FileMode.Truncate, FileAccess.Write))
+                {
+                    BinaryFormatter bf = new BinaryFormatter();
+                    bf.Serialize(fs, conf);
+
+                }
+            }
+            catch (Exception err)
+            {
+                MetroMessageBox.Show(this, "Could not write configuration to disk.\nError:" + err.ToString(), "oops..", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
 
@@ -147,44 +175,75 @@ namespace Agenda_Rework
 
         private void metroButton5_Click(object sender, EventArgs e)
         {
-            string new_record;
-
+           /**
+            * 
+            * w da kaman.
+            * 
+            * 
+            * **/
+            bool err_flag = false;
 
             if (newbox.Text != confirm.Text)
             {
-
+                err_flag = true;
                 MetroFramework.MetroMessageBox.Show(this, "Password Don't Match,Try Again...", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            FileStream fs = new FileStream("Users.dat", FileMode.Open, FileAccess.ReadWrite);
-            //Read all into "contents"
-            StreamReader sr = new StreamReader(fs);
-            string contents = sr.ReadToEnd();
-            sr.Close();
-            //search for the wanted line
-
-            fs.Close();
-            //reconstruct record
-            if (new FileInfo("Users.dat").Length == 0)
+            if (!err_flag)
             {
-                 new_record = LoginForm.current_user + '|' + confirm.Text + '|' + LoginForm.current_gender + '\n';
+                string contents = "",
+                       name = "",
+                       gender = "";
+
+                using (FileStream fs = new FileStream("Users.dat", FileMode.Open, FileAccess.ReadWrite))
+                {
+
+                    using (StreamReader sr = new StreamReader(fs))
+                    {
+
+                        contents = sr.ReadToEnd();
+
+                    }
+                }
+
+                //search for the record and take it in memory for later reconstruction.
+                foreach (var record in Regex.Split(contents, @"(?<=[;])"))
+                {
+                    if (record.Contains(LoginForm.current_user))
+                    {
+
+                        name = record.Split('|')[0];
+                        gender = record.Split('|')[2];  //ALREADY CONTAINS ";" <------- 
+                    }
+                }
+                //Now let's reconstruct that sucker!
+                string new_record = newusername.Text.ToLower() + '|' + confirm.Text + '|' + gender;
+
+                using (FileStream fs = new FileStream("Users.dat", FileMode.Truncate, FileAccess.Write))
+                {
+
+
+                    using (StreamWriter sw = new StreamWriter(fs))
+                    {
+                        foreach (var rec in Regex.Split(contents, @"(?<=[;])"))
+                        {
+                            if (rec.Contains(LoginForm.current_user)) { continue; } else { sw.Write(rec); }
+
+                        }
+
+                        sw.Write(new_record);
+
+                    }
+                }
             }
-            else {  new_record = '\n'+LoginForm.current_user + '|' + confirm.Text + '|' + LoginForm.current_gender; }
-
-            //Write new record along with the rest of them with an exception of the old one:
-            File.Delete("Users.dat");
-            StreamWriter sw = new StreamWriter("Users.dat");
-            sw.Write(new_record);
-
-            for (int i = 0; i < contents.Split('\n').Length; i++)
-            {
-                if (!(contents.Split('\n')[i].Contains(LoginForm.current_user))) { sw.Write(contents.Split('\n')[i] + '\n'); } else { continue; }
-            }
-
-            sw.Close();
         }
 
         private void chgusr_Click_1(object sender, EventArgs e)
+            /**
+             * 
+             * ELLY HAYEEGI GAMB EL BLOCK DA HA3AWARO 
+             * 
+             * **/
         {
             string contents="",
                    pass="",
@@ -272,76 +331,34 @@ namespace Agenda_Rework
             }
         }
 
-        string config_string = "";
-
         private void appoint_check_CheckedChanged(object sender, EventArgs e)
         {
-            if (appoint_check.Checked)
-            {
-                conf["Appointments"] = 1;
-
-            }
-            else { conf["Appointments"] = 0; }
+            if (!appoint_check.Checked) { conf.Appointments = false; } else { conf.Appointments = true; }
         }
 
         private void towatch_check_CheckedChanged(object sender, EventArgs e)
         {
-            if (towatch_check.Checked)
-            {
-                conf["towatch"] = 1;
-
-            }
-            else { conf["towatch"] = 0; }
+            if (!towatch_check.Checked) { conf.towatch = false; } else { conf.towatch = true; }
         }
 
         private void todo_check_CheckedChanged(object sender, EventArgs e)
         {
-            if (todo_check.Checked)
-            {
-                conf["todo"] = 1;
-
-            }
-            else { conf["todo"] = 0; }
+            if (!todo_check.Checked) { conf.todo = false; } else { conf.todo = true; }
         }
 
         private void tord_check_CheckedChanged(object sender, EventArgs e)
         {
-            if (tord_check.Checked)
-            {
-                conf["toread"] = 1;
-
-            }
-            else { conf["toread"] = 1; }
+            if (!tord_check.Checked) { conf.toread = false; } else { conf.toread = true; }
         }
 
         private void slfstd_check_CheckedChanged(object sender, EventArgs e)
         {
-            if (slfstd_check.Checked)
-            {
-                conf["self_study"] = 1;
-
-            }
-            else { conf["self_study"] = 1; }
+            if (!slfstd_check.Checked) { conf.self_study = false; } else { conf.self_study = true; }
         }
 
         private void uni_check_CheckedChanged(object sender, EventArgs e)
         {
-            if (uni_check.Checked)
-            {
-                conf["uni_school"] = 1;
-
-            }
-            else { conf["uni_school"] = 1; }
-        }
-
-        private void apply_btn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void metroLabel4_Click(object sender, EventArgs e)
-        {
-
+            if (!uni_check.Checked) { conf.uni_school = false; } else { conf.self_study = true; }
         }
 
         private void ForeColor_Click(object sender, EventArgs e)
@@ -349,7 +366,13 @@ namespace Agenda_Rework
 
         }
 
-
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            var m = new Random();
+            int next = m.Next(0, 13);
+            metroStyleManager1.Style = (MetroFramework.MetroColorStyle)next;
+            conf.style = (MetroFramework.MetroColorStyle)next;
+        }
 
 
     }

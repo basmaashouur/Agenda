@@ -10,7 +10,7 @@ namespace Agenda_Rework
     {
         public static bool load_flag = false;
         public void ShowMain() {
-            MainForm MF = new MainForm(LoginForm.current_user,LoginForm.current_gender);
+            MainForm MF = new MainForm();
             //Placement of the following block of code is subject to change.
             while (true) {
                 if (MF != null) { MFthread.load_flag = true; break; }            

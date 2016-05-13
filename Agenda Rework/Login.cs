@@ -93,9 +93,12 @@ namespace Agenda_Rework
                                     metroProgressSpinner1.Visible = true;
                                     timer1.Enabled = true;
                                     timer1.Start();
-                                    MFthread MFT = new MFthread();
+                                    /**MFthread MFT = new MFthread();
                                     Thread th = new Thread(new ThreadStart(MFT.ShowMain));
-                                    th.Start();
+                                    th.Start();**/
+                                    settings st = new settings();
+                                    st.Show();
+                                    this.Hide();
                                     break;
 
                                 }
@@ -105,7 +108,10 @@ namespace Agenda_Rework
                             catch { found_flag = false; }
 
                         }
-                        if (!found_flag) { MetroFramework.MetroMessageBox.Show(this, "Wrong username or password.", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                        if (!found_flag) { MetroFramework.MetroMessageBox.Show(this, "Wrong username or password.", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        textBox1.Visible = false;
+                        metroProgressSpinner1.Visible = false;
+                        }
 
 
                     }
@@ -136,7 +142,7 @@ namespace Agenda_Rework
             
             textBox1.Text = loading_text[i];
             i++;
-            if (i == 6) { timer1.Stop(); }
+            if (i == 5) { timer1.Stop(); }
 
         }
 
