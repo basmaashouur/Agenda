@@ -10,3 +10,40 @@ C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rew
 C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Release\af-ZA\Agenda Rework.resources.dll
 C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Release\Agenda Rework.exe
 C:\Users\Amiurius\documents\visual studio 2010\Projects\Agenda Rework\Agenda Rework\obj\x86\Release\Agenda Rework.pdb
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda Rework.csproj.ResolveComReference.cache
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda Rework.exe
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda Rework.pdb
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\bin\Release\Agenda Rework.exe
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\bin\Release\Agenda Rework.pdb
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\bin\Release\af-ZA\Agenda Rework.resources.dll
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda Rework.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.MainForm.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.LoginForm.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.Properties.Resources.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.settings.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.Signup.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.WriteStuff.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda_Rework.MainForm.af-ZA.resources
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\Agenda Rework.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\Agenda-master\Agenda-master\Agenda Rework\obj\x86\Release\af-ZA\Agenda Rework.resources.dll
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Interop.WMPLib.dll
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\AxInterop.WMPLib.dll
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda Rework.csproj.ResolveComReference.cache
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda Rework.exe
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda Rework.pdb
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda Rework.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda_Rework.MainForm.resources
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda_Rework.LoginForm.resources
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda_Rework.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda_Rework.settings.resources
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda_Rework.Signup.resources
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda_Rework.Zenzone.resources
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda_Rework.MainForm.af-ZA.resources
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda Rework.csproj.GenerateResource.Cache
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\bin\Release\Agenda Rework.exe
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\bin\Release\Agenda Rework.pdb
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\bin\Release\af-ZA\Agenda Rework.resources.dll
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\bin\Release\Interop.WMPLib.dll
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\bin\Release\AxInterop.WMPLib.dll
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\Agenda_Rework.WriteStuff.resources
+C:\Users\user\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Release\af-ZA\Agenda Rework.resources.dll
