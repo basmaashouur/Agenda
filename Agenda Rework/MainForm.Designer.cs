@@ -117,6 +117,7 @@ namespace Agenda_Rework
             this.metroTile5.UseSelectable = true;
             this.metroTile5.UseStyleColors = true;
             this.metroTile5.UseTileImage = true;
+            this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
             // 
             // towatch_tile
             // 
@@ -257,6 +258,7 @@ namespace Agenda_Rework
             this.Name = "MainForm";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.TransparencyKey = System.Drawing.Color.CornflowerBlue;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.MSM1)).EndInit();
             this.ResumeLayout(false);

@@ -92,6 +92,7 @@
             // Add
             // 
             this.Add.BackColor = System.Drawing.Color.Transparent;
+            this.Add.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Add.Image = null;
             this.Add.Location = new System.Drawing.Point(424, 105);
             this.Add.Name = "Add";
@@ -169,11 +170,13 @@
             // 
             // deletechecked
             // 
+            this.deletechecked.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.deletechecked.Location = new System.Drawing.Point(396, 24);
             this.deletechecked.Name = "deletechecked";
             this.deletechecked.Size = new System.Drawing.Size(151, 32);
             this.deletechecked.TabIndex = 2;
             this.deletechecked.Text = "Delete Checked";
+            this.deletechecked.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.deletechecked.UseSelectable = true;
             this.deletechecked.Click += new System.EventHandler(this.deletechecked_Click);
             // 
@@ -189,6 +192,9 @@
             this.ClientSize = new System.Drawing.Size(1064, 587);
             this.Controls.Add(this.allPanel);
             this.Controls.Add(this.labelOf);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Movable = false;
             this.Name = "WriteStuff";
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Theme = MetroFramework.MetroThemeStyle.Dark;

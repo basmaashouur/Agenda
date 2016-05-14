@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Threading;
 
 namespace Agenda_Rework
 {
@@ -34,6 +35,7 @@ namespace Agenda_Rework
             MFthread.load_flag = true;
             using (FileStream fs = new FileStream(settings.conf_file, FileMode.Open, FileAccess.Read))
             {
+                Thread.CurrentThread.SetApartmentState(ApartmentState.STA);
                 BinaryFormatter bf = new BinaryFormatter();
                 config conf = (config)bf.Deserialize(fs);
                 MSM1.Style = (MetroFramework.MetroColorStyle)conf.style;
@@ -69,7 +71,7 @@ namespace Agenda_Rework
             ein.gendre.Items.AddRange(stuffUni);
             ein.gendre.SelectedIndex = 4;
             // start of handling the file and showing the perv stuff
-            FileStream school = new FileStream("school.txt", FileMode.OpenOrCreate, FileAccess.Read);
+            FileStream school = new FileStream(settings.conf_directory+@"\school.txt", FileMode.OpenOrCreate, FileAccess.Read);
             StreamReader powersc = new StreamReader(school);
             string ninja;
             while (true)
@@ -102,7 +104,7 @@ namespace Agenda_Rework
             ein.gendre.Items.AddRange(stuffself);
             ein.gendre.SelectedIndex = 5;
             // start of handling the file and showing the perv stuff
-            FileStream selfstudy = new FileStream("selfstudy.txt", FileMode.OpenOrCreate, FileAccess.Read);
+            FileStream selfstudy = new FileStream(settings.conf_directory+@"\selfstudy.txt", FileMode.OpenOrCreate, FileAccess.Read);
             StreamReader powerse = new StreamReader(selfstudy);
             string ninja;
             while (true)
@@ -136,7 +138,7 @@ namespace Agenda_Rework
             ein.gendre.Items.AddRange(stuffself);
             ein.gendre.SelectedIndex = 7;
             // start of handling the file and showing the perv stuff
-            FileStream toread = new FileStream("toread.txt", FileMode.OpenOrCreate, FileAccess.Read);
+            FileStream toread = new FileStream(settings.conf_directory+@"\toread.txt", FileMode.OpenOrCreate, FileAccess.Read);
             StreamReader powertre = new StreamReader(toread);
             string ninja;
             while (true)
@@ -170,7 +172,7 @@ namespace Agenda_Rework
             ein.gendre.Items.AddRange(stuffself);
             ein.gendre.SelectedIndex = 6;
             // start of handling the file and showing the perv stuff
-            FileStream towatch = new FileStream("towatch.txt", FileMode.OpenOrCreate, FileAccess.Read);
+            FileStream towatch = new FileStream(settings.conf_directory+@"\towatch.txt", FileMode.OpenOrCreate, FileAccess.Read);
             StreamReader powerwa = new StreamReader(towatch);
             string ninja;
             while (true)
@@ -203,7 +205,7 @@ namespace Agenda_Rework
             ein.gendre.Items.AddRange(stuffself);
             ein.gendre.SelectedIndex = 4;
             // start of handling the file and showing the perv stuff
-            FileStream appoim = new FileStream("appoiments.txt", FileMode.OpenOrCreate, FileAccess.Read);
+            FileStream appoim = new FileStream(settings.conf_directory+@"\appointments.txt", FileMode.OpenOrCreate, FileAccess.Read);
             StreamReader powerapp = new StreamReader(appoim);
             string ninja;
             while (true)
@@ -232,7 +234,7 @@ namespace Agenda_Rework
             WriteStuff ein = new WriteStuff();
             ein.LabelText = this.todo_tile.Text;
             // start of handling and showing the perv stuff in the file
-            FileStream todo = new FileStream("todo.txt", FileMode.OpenOrCreate, FileAccess.Read);
+            FileStream todo = new FileStream(settings.conf_directory+@"\todo.txt", FileMode.OpenOrCreate, FileAccess.Read);
             StreamReader powertodo = new StreamReader(todo);
             string ninja;
             while (true)
@@ -304,6 +306,18 @@ namespace Agenda_Rework
         {
             metroTile1.Visible = false;
             metroTile2.Visible = false;
+        }
+
+        private void metroTile5_Click(object sender, EventArgs e)
+        {
+            About ab = new About();
+            ab.Show();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.ExitThread();
+            Application.Exit();
         }
 
  

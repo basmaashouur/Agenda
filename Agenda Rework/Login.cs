@@ -143,6 +143,11 @@ namespace Agenda_Rework
 
         }
 
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
        
 
        

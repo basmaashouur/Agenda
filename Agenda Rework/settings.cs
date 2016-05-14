@@ -88,6 +88,7 @@ namespace Agenda_Rework
                 {
                     BinaryFormatter bf = new BinaryFormatter();
                     bf.Serialize(fs, conf);
+                    metroLabel1.Visible = true;
 
                 }
             }

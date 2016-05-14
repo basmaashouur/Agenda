@@ -62,6 +62,7 @@
             this.appoint_check = new MetroFramework.Controls.MetroCheckBox();
             this.Tiles = new MetroFramework.Controls.MetroLabel();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
@@ -74,7 +75,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Location = new System.Drawing.Point(37, 73);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(746, 370);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -425,7 +426,7 @@
             // 
             this.apply_btn.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.apply_btn.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.apply_btn.Location = new System.Drawing.Point(332, 295);
+            this.apply_btn.Location = new System.Drawing.Point(309, 295);
             this.apply_btn.Name = "apply_btn";
             this.apply_btn.Size = new System.Drawing.Size(121, 30);
             this.apply_btn.TabIndex = 35;
@@ -535,7 +536,7 @@
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(445, 60);
             this.metroLabel2.TabIndex = 26;
-            this.metroLabel2.Text = "Check the tiles you don\'t need to \r\ndisable them";
+            this.metroLabel2.Text = "Uncheck the tiles you don\'t need to \r\ndisable them";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // uni_check
@@ -635,11 +636,23 @@
             this.metroStyleManager1.Owner = this;
             this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(269, 446);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(283, 19);
+            this.metroLabel1.TabIndex = 1;
+            this.metroLabel1.Text = "Settings will be applied after application restart";
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.Visible = false;
+            // 
             // settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 480);
+            this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroTabControl1);
             this.Name = "settings";
             this.Style = MetroFramework.MetroColorStyle.Default;
@@ -653,6 +666,7 @@
             this.metroTabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -691,6 +705,7 @@
         private MetroFramework.Controls.MetroButton apply_btn;
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Components.MetroStyleManager metroStyleManager1;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
 
     }
 }

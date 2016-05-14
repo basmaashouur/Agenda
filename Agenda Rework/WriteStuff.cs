@@ -154,9 +154,9 @@ namespace Agenda_Rework
                {
                    // school\uni database  ((0))
 
-                   FileStream writescho = new FileStream("school.txt", FileMode.Append, FileAccess.Write);
+                   FileStream writescho = new FileStream(settings.conf_directory+@"\school.txt", FileMode.Append, FileAccess.Write);
                    StreamWriter force = new StreamWriter(writescho);
-                   FileStream wetodo = new FileStream("todo.txt", FileMode.Append, FileAccess.Write);
+                   FileStream wetodo = new FileStream(settings.conf_directory+@"\todo.txt", FileMode.Append, FileAccess.Write);
                    StreamWriter lightsaber = new StreamWriter(wetodo);
                    force.WriteLine(todo);
                    lightsaber.WriteLine("#University/School " + todo);
@@ -170,9 +170,9 @@ namespace Agenda_Rework
               public void Add1(string todo)
                {
                    // selfstudy data base   ((1))
-                   FileStream writeself = new FileStream("selfstudy.txt", FileMode.Append, FileAccess.Write);
+                   FileStream writeself = new FileStream(settings.conf_directory+@"\selfstudy.txt", FileMode.Append, FileAccess.Write);
                    StreamWriter force = new StreamWriter(writeself);
-                   FileStream wetodo = new FileStream("todo.txt", FileMode.Append, FileAccess.Write);
+                   FileStream wetodo = new FileStream(settings.conf_directory+@"\todo.txt", FileMode.Append, FileAccess.Write);
                    StreamWriter lightsaber = new StreamWriter(wetodo);
                    force.WriteLine(todo);
                    lightsaber.WriteLine("#Self Study " + todo);
@@ -185,9 +185,9 @@ namespace Agenda_Rework
                public void Add2(string todo)
                {
                   // toread data base  ((2))
-                   FileStream writere = new FileStream("toread.txt", FileMode.Append, FileAccess.Write);
+                   FileStream writere = new FileStream(settings.conf_directory+@"\toread.txt", FileMode.Append, FileAccess.Write);
                    StreamWriter force = new StreamWriter(writere);
-                   FileStream wetodo = new FileStream("todo.txt", FileMode.Append, FileAccess.Write);
+                   FileStream wetodo = new FileStream(settings.conf_directory+@"\todo.txt", FileMode.Append, FileAccess.Write);
                    StreamWriter lightsaber = new StreamWriter(wetodo);
                    force.WriteLine(todo);
                    lightsaber.WriteLine("#To Read " + todo);
@@ -200,9 +200,9 @@ namespace Agenda_Rework
                public void Add3(string todo)
                {
                   // towatch database    ((3))
-                   FileStream writewa = new FileStream("towatch.txt", FileMode.Append, FileAccess.Write);
+                   FileStream writewa = new FileStream(settings.conf_directory+@"\towatch.txt", FileMode.Append, FileAccess.Write);
                    StreamWriter force = new StreamWriter(writewa);
-                   FileStream wetodo = new FileStream("todo.txt", FileMode.Append, FileAccess.Write);
+                   FileStream wetodo = new FileStream(settings.conf_directory+@"\todo.txt", FileMode.Append, FileAccess.Write);
                    StreamWriter lightsaber = new StreamWriter(wetodo);
                    force.WriteLine(todo);
                    lightsaber.WriteLine("#To Watch " + todo);
@@ -215,9 +215,9 @@ namespace Agenda_Rework
                public void Add4(string todo)
                {
                   //  appoiments datbase   ((4))
-                   FileStream writeapp = new FileStream("appoiments.txt", FileMode.Append, FileAccess.Write);
+                   FileStream writeapp = new FileStream(settings.conf_directory+@"\appointments.txt", FileMode.Append, FileAccess.Write);
                    StreamWriter force = new StreamWriter(writeapp);
-                   FileStream wetodo = new FileStream("todo.txt", FileMode.Append, FileAccess.Write);
+                   FileStream wetodo = new FileStream(settings.conf_directory+@"\todo.txt", FileMode.Append, FileAccess.Write);
                    StreamWriter lightsaber = new StreamWriter(wetodo);
                    force.WriteLine(todo);
                    lightsaber.WriteLine("#Appointments " + todo);
@@ -304,12 +304,12 @@ namespace Agenda_Rework
 
                    }
                  //deleting from the files itself( calling the method)
-                   deleteFiles(itemsToRemoveTodo, "todo.txt");
-                   if (itemsToRemoveApp.Count>0) deleteFiles(itemsToRemoveApp, "appoiments.txt");
-                   if(itemsToRemoveRe.Count>0) deleteFiles(itemsToRemoveRe, "toread.txt");
-                   if(itemsToRemoveSe.Count>0) deleteFiles(itemsToRemoveSe, "selfstudy.txt");
-                   if(itemsToRemoveUn.Count>0)deleteFiles(itemsToRemoveUn, "school.txt");
-                   if(itemsToRemoveWa.Count>0)deleteFiles(itemsToRemoveWa, "towatch.txt");
+                   deleteFiles(itemsToRemoveTodo, settings.conf_directory+@"\todo.txt");
+                   if (itemsToRemoveApp.Count>0) deleteFiles(itemsToRemoveApp, settings.conf_directory+@"\appointments.txt");
+                   if(itemsToRemoveRe.Count>0) deleteFiles(itemsToRemoveRe, settings.conf_directory+@"\toread.txt");
+                   if(itemsToRemoveSe.Count>0) deleteFiles(itemsToRemoveSe, settings.conf_directory+@"\selfstudy.txt");
+                   if(itemsToRemoveUn.Count>0)deleteFiles(itemsToRemoveUn, settings.conf_directory+@"\school.txt");
+                   if(itemsToRemoveWa.Count>0)deleteFiles(itemsToRemoveWa, settings.conf_directory+@"\towatch.txt");
                  
                }
                
@@ -321,11 +321,11 @@ namespace Agenda_Rework
                    {
                        string temp = checkboxre.Text;
                        
-                       if (pathName == "school.txt")temp= temp.Remove(0, 19);
-                       else if (pathName == "selfstudy.txt")temp= temp.Remove(0, 12);
-                       else if (pathName == "toread.txt") temp=temp.Remove(0, 9);
-                       else if (pathName == "towatch.txt")temp= temp.Remove(0, 10);
-                       else if (pathName == "appoiments.txt")temp= temp.Remove(0, 14);
+                       if (pathName == settings.conf_directory+@"\school.txt")temp= temp.Remove(0, 19);
+                       else if (pathName == settings.conf_directory+@"\selfstudy.txt")temp= temp.Remove(0, 12);
+                       else if (pathName == settings.conf_directory+@"\toread.txt") temp=temp.Remove(0, 9);
+                       else if (pathName == settings.conf_directory+@"\towatch.txt")temp= temp.Remove(0, 10);
+                       else if (pathName == settings.conf_directory+@"\appointments.txt")temp= temp.Remove(0, 14);
                        
                        string text = File.ReadAllText(pathName);
                        text = text.Replace(temp, "*");
@@ -381,6 +381,8 @@ namespace Agenda_Rework
                {
 
                }
+
+              
 
     
     }

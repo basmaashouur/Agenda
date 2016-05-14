@@ -77,3 +77,4 @@ C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rew
 C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\bin\Debug\Interop.WMPLib.dll
 C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rework.splash.resources
+C:\Users\Amiurius\Documents\GitHub\Agenda\Agenda Rework\obj\x86\Debug\Agenda_Rework.About.resources

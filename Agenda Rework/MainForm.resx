@@ -244,16 +244,13 @@
   <data name="metroTile3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="metroTile3.Text" xml:space="preserve">
-    <value>Kate</value>
-  </data>
   <data name="metroTile3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
   <data name="metroTile3.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3UAAAN1AHvkboVAAAAAmJL
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3TAAAN0wG91RxqAAAAAmJL
         R0QAAKqNIzIAAAAHdElNRQfgBQoWNANHRaO5AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA1LTEwVDIy
         OjUyOjAzKzAyOjAw3tWcOQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wNS0xMFQyMjo1MjowMyswMjow
         MK+IJIUAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAEbklEQVR4Xu2bsYoUQRCG
@@ -36009,7 +36006,7 @@ or keep you updated on where you are in your self studying endeavor.</value>
   <data name="metroTile1.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3WAAAN1gGQb3mcAAAAAmJL
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3VAAAN1QE91ljxAAAAAmJL
         R0QAAKqNIzIAAAAHdElNRQfgBQ4AGxRBQ1aGAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA1LTE0VDAw
         OjI3OjIwKzAyOjAwNwlifwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wNS0xNFQwMDoyNzoyMCswMjow
         MEZU2sMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAABH0lEQVRYR82X2RHDIAxE
@@ -36053,7 +36050,7 @@ or keep you updated on where you are in your self studying endeavor.</value>
   <data name="metroTile2.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3WAAAN1gGQb3mcAAAAAmJL
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3VAAAN1QE91ljxAAAAAmJL
         R0QAAKqNIzIAAAAHdElNRQfgBQ4AHDrS1M2OAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA1LTE0VDAw
         OjI4OjU4KzAyOjAw/yh+jAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wNS0xNFQwMDoyODo1OCswMjow
         MI51xjAAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAABLUlEQVRYR+XWvQ3CMBCG
