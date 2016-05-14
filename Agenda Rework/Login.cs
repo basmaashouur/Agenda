@@ -93,12 +93,10 @@ namespace Agenda_Rework
                                     metroProgressSpinner1.Visible = true;
                                     timer1.Enabled = true;
                                     timer1.Start();
-                                    /**MFthread MFT = new MFthread();
+                                    MFthread MFT = new MFthread();
                                     Thread th = new Thread(new ThreadStart(MFT.ShowMain));
-                                    th.Start();**/
-                                    settings st = new settings();
-                                    st.Show();
-                                    this.Hide();
+                                    th.SetApartmentState(ApartmentState.STA);
+                                    th.Start();
                                     break;
 
                                 }
@@ -138,11 +136,10 @@ namespace Agenda_Rework
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (MFthread.load_flag == true) { this.Close(); timer1.Stop(); }
+            if (MFthread.load_flag) { this.Hide(); timer1.Stop(); }
             
-            textBox1.Text = loading_text[i];
+            textBox1.Text = loading_text[i%6];
             i++;
-            if (i == 5) { timer1.Stop(); }
 
         }
 

@@ -39,6 +39,7 @@ namespace Agenda_Rework
         {
             //if the config file doesn't exist, load the dictionary with the 
             //configuration values and then dump them into interface.conf
+            metroStyleManager1.Style = (MetroColorStyle)conf.style;
             this.StyleManager = metroStyleManager1;
             if (!Directory.Exists(conf_directory)) { Directory.CreateDirectory(conf_directory); }
             if (!File.Exists(conf_file))
@@ -98,60 +99,53 @@ namespace Agenda_Rework
         }
 
 
-       
-
-        private void chgusr_Click(object sender, EventArgs e)
-        {
-            string contents = null;
-            StreamReader srr = File.OpenText("Users.dat");
-            contents = srr.ReadToEnd();
-            string name = contents.Split('|')[0];
-            srr.Close();
-            StreamWriter sw = File.CreateText("Users.dat");
-            sw.Write(contents.Replace(name, newusername.Text));
-            sw.Close();
-        }
 
         private void dltacct_Click(object sender, EventArgs e)
         {
-            string myname = Microsoft.VisualBasic.Interaction.InputBox("Enter Your Username", "");
-            StreamReader sr = new StreamReader("Users.dat");
-            int countline = 0;
-            string line;
-
-            while ((line = sr.ReadLine()) != null)
+            DialogResult dr = MetroMessageBox.Show(this, "This will permanently delete your account, Are you sure you want to continue?", "Are you leaving?..", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dr == DialogResult.Yes)
             {
-                countline++;
-                if (line.Contains(myname))
+                string pass_confirm = Microsoft.VisualBasic.Interaction.InputBox("Please Enter your password:");
+                if (pass_confirm == LoginForm.current_password)
                 {
-                    break;
-                }
-            }
-            sr.Close();
 
-            string linee = null;
-            int linenumber = 0;
-            using (StreamReader reader = new StreamReader("Users.dat"))
-            {
-                using (StreamWriter writer = new StreamWriter("new.dat"))
-                {
-                    while ((linee = reader.ReadLine()) != null)
+
+
+                    string contents;
+                    using (FileStream fs = new FileStream("Users.dat", FileMode.Open, FileAccess.Read))
                     {
-                        linenumber++;
-                        if (linenumber == countline)
+
+                        using (StreamReader sr = new StreamReader(fs))
                         {
-                            continue;
+
+                            contents = sr.ReadToEnd();
                         }
-                        writer.WriteLine(linee);
                     }
+
+
+                    using (FileStream fs_1 = new FileStream("Users.dat", FileMode.Truncate, FileAccess.Write))
+                    {
+
+
+                        using (StreamWriter sw = new StreamWriter(fs_1))
+                        {
+                            foreach (var rec in Regex.Split(contents, @"(?<=[;])"))
+                            {
+                                if (rec.Contains(LoginForm.current_user)) { continue; } else { sw.Write(rec); }
+
+                            }
+
+                        }
+                    }
+
+                    MetroFramework.MetroMessageBox.Show(this, "We will miss you, " + LoginForm.current_user + " </3 ", "Bye..", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    this.Hide();
+                    LoginForm lf = new LoginForm();
+                    lf.Show();
                 }
+                else { MetroFramework.MetroMessageBox.Show(this, "Wrong Password, Aborting Deletion.", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
             }
-            File.Delete("Users.dat");
-            File.Move("new.dat", "Users.dat");
-
-            MetroFramework.MetroMessageBox.Show(this, "We will miss you, " + myname + " 💔 ", "Bye..", MessageBoxButtons.OK);
-
-
         }
 
 
@@ -282,54 +276,12 @@ namespace Agenda_Rework
 
                         }}
 
-            
-            
-             
         }
 
 
 
 
-        private void changepp_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                //metroTile3.TileImage = Image.FromFile(ofd.FileName);
-
-
-                //if a user directory doesn't exist:
-                if (!Directory.Exists(@"D:\" + LoginForm.current_user))
-                {
-                    Directory.CreateDirectory(@"D:\" + LoginForm.current_user);
-
-                }
-                //if a config. file doesn't exist:
-                if (!File.Exists(conf_file))
-                {
-                    File.Create(conf_file);
-                }
-                using (FileStream conf_fs = new FileStream(conf_file, FileMode.Open, FileAccess.ReadWrite))
-                {
-                    using (StreamWriter conf_sw = new StreamWriter(conf_fs))
-                    {
-                        //if file is empty
-                        if (new FileInfo(conf_file).Length == 0)
-                        {
-                            string full_pp_path = Path.GetDirectoryName(ofd.FileName);
-                            conf_sw.WriteLine("PP:" + full_pp_path);
-                        }
-
-
-
-                    }
-
-
-
-                }
-
-            }
-        }
+  
 
         private void appoint_check_CheckedChanged(object sender, EventArgs e)
         {
@@ -373,6 +325,8 @@ namespace Agenda_Rework
             metroStyleManager1.Style = (MetroFramework.MetroColorStyle)next;
             conf.style = (MetroFramework.MetroColorStyle)next;
         }
+
+       
 
 
     }

@@ -8,6 +8,8 @@ using System.Text;
 using System.Windows.Forms;
 using MetroFramework.Forms;
 using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Agenda_Rework
 {
@@ -22,7 +24,13 @@ namespace Agenda_Rework
 
         private void WriteStuff_Load(object sender, EventArgs e)
         {
-
+            using (FileStream fs = new FileStream(settings.conf_file, FileMode.Open, FileAccess.Read))
+            {
+                BinaryFormatter bf = new BinaryFormatter();
+                config conf = (config)bf.Deserialize(fs);
+                MSM.Style = (MetroFramework.MetroColorStyle)conf.style;
+                this.StyleManager = MSM;
+            }
         }
 
            public void reciveCheck(int value)

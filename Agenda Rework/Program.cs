@@ -11,12 +11,13 @@ namespace Agenda_Rework
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
+        /// 
+        //[STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Zenzone());
+            Application.Run(new splash());
             Application.Exit();
         }
     }

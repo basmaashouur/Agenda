@@ -118,20 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="metroTile1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="uni_tile.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 449</value>
   </data>
-  <data name="metroTile1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="uni_tile.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 119</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="metroTile1.TabIndex" type="System.Int32, mscorlib">
+  <data name="uni_tile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="metroTile1.Text" xml:space="preserve">
+  <data name="uni_tile.Text" xml:space="preserve">
     <value>University/School</value>
   </data>
-  <data name="metroTile1.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="uni_tile.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3QAAAN0AEQbD0HAAAAB3RJ
@@ -163,37 +163,37 @@
         FJ8Bp44sAO/vXvMLXVSpoViArdT5tZFFGBMe7tTQKcC/sF0a0RJk4pUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="&gt;&gt;metroTile1.Name" xml:space="preserve">
-    <value>metroTile1</value>
+  <data name="&gt;&gt;uni_tile.Name" xml:space="preserve">
+    <value>uni_tile</value>
   </data>
-  <data name="&gt;&gt;metroTile1.Type" xml:space="preserve">
+  <data name="&gt;&gt;uni_tile.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;metroTile1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;uni_tile.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;metroTile1.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;uni_tile.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
-  <metadata name="metroTile2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Selfstd_tile.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="metroTile2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Selfstd_tile.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="metroTile2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Selfstd_tile.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 279</value>
   </data>
-  <data name="metroTile2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Selfstd_tile.Size" type="System.Drawing.Size, System.Drawing">
     <value>254, 164</value>
   </data>
-  <data name="metroTile2.TabIndex" type="System.Int32, mscorlib">
+  <data name="Selfstd_tile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="metroTile2.Text" xml:space="preserve">
+  <data name="Selfstd_tile.Text" xml:space="preserve">
     <value>Self Study</value>
   </data>
-  <data name="metroTile2.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Selfstd_tile.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3QAAAN0AEQbD0HAAAAB3RJ
@@ -223,20 +223,17 @@
         BQDtrg1Fz++p+JKKURVsCT7vgrm4Ss2PL0onmVB/k52WAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;metroTile2.Name" xml:space="preserve">
-    <value>metroTile2</value>
+  <data name="&gt;&gt;Selfstd_tile.Name" xml:space="preserve">
+    <value>Selfstd_tile</value>
   </data>
-  <data name="&gt;&gt;metroTile2.Type" xml:space="preserve">
+  <data name="&gt;&gt;Selfstd_tile.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;metroTile2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Selfstd_tile.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;metroTile2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="metroTile3.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;Selfstd_tile.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="metroTile3.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 29</value>
@@ -256,7 +253,7 @@
   <data name="metroTile3.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3WAAAN1gGQb3mcAAAAAmJL
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3UAAAN1AHvkboVAAAAAmJL
         R0QAAKqNIzIAAAAHdElNRQfgBQoWNANHRaO5AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA1LTEwVDIy
         OjUyOjAzKzAyOjAw3tWcOQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wNS0xMFQyMjo1MjowMyswMjow
         MK+IJIUAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAEbklEQVR4Xu2bsYoUQRCG
@@ -291,21 +288,21 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>14</value>
   </data>
-  <data name="metroTile4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="toread_tile.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 154</value>
   </data>
-  <data name="metroTile4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="toread_tile.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 119</value>
   </data>
-  <data name="metroTile4.TabIndex" type="System.Int32, mscorlib">
+  <data name="toread_tile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="metroTile4.Text" xml:space="preserve">
+  <data name="toread_tile.Text" xml:space="preserve">
     <value>To Read</value>
   </data>
-  <data name="metroTile4.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="toread_tile.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3QAAAN0AEQbD0HAAAAB3RJ
@@ -347,17 +344,17 @@
         zN2ygMGwS2Xy2LKAMrU7GOb+F7Ap7YaFWnaKAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;metroTile4.Name" xml:space="preserve">
-    <value>metroTile4</value>
+  <data name="&gt;&gt;toread_tile.Name" xml:space="preserve">
+    <value>toread_tile</value>
   </data>
-  <data name="&gt;&gt;metroTile4.Type" xml:space="preserve">
+  <data name="&gt;&gt;toread_tile.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;metroTile4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;toread_tile.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;metroTile4.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;toread_tile.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="metroTile5.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 449</value>
@@ -408,21 +405,21 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile5.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
-  <data name="metroTile7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="towatch_tile.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 29</value>
   </data>
-  <data name="metroTile7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="towatch_tile.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 119</value>
   </data>
-  <data name="metroTile7.TabIndex" type="System.Int32, mscorlib">
+  <data name="towatch_tile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="metroTile7.Text" xml:space="preserve">
+  <data name="towatch_tile.Text" xml:space="preserve">
     <value>To watch</value>
   </data>
-  <data name="metroTile7.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="towatch_tile.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3QAAAN0AEQbD0HAAAAB3RJ
@@ -439,31 +436,31 @@
         vEJGKypMTQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;metroTile7.Name" xml:space="preserve">
-    <value>metroTile7</value>
+  <data name="&gt;&gt;towatch_tile.Name" xml:space="preserve">
+    <value>towatch_tile</value>
   </data>
-  <data name="&gt;&gt;metroTile7.Type" xml:space="preserve">
+  <data name="&gt;&gt;towatch_tile.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;metroTile7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;towatch_tile.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;metroTile7.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;towatch_tile.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="metroTile8.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Appoint_tile.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 29</value>
   </data>
-  <data name="metroTile8.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Appoint_tile.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 119</value>
   </data>
-  <data name="metroTile8.TabIndex" type="System.Int32, mscorlib">
+  <data name="Appoint_tile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="metroTile8.Text" xml:space="preserve">
+  <data name="Appoint_tile.Text" xml:space="preserve">
     <value>Appointments</value>
   </data>
-  <data name="metroTile8.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Appoint_tile.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3QAAAN0AEQbD0HAAAAB3RJ
@@ -492,17 +489,17 @@
         QmCC
 </value>
   </data>
-  <data name="&gt;&gt;metroTile8.Name" xml:space="preserve">
-    <value>metroTile8</value>
+  <data name="&gt;&gt;Appoint_tile.Name" xml:space="preserve">
+    <value>Appoint_tile</value>
   </data>
-  <data name="&gt;&gt;metroTile8.Type" xml:space="preserve">
+  <data name="&gt;&gt;Appoint_tile.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;metroTile8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Appoint_tile.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;metroTile8.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;Appoint_tile.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="metroTile9.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 449</value>
@@ -575,7 +572,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile9.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="metroTile10.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 154</value>
@@ -636,7 +633,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;metroTile10.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <metadata name="MSM1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -35855,33 +35852,6 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1136, 603</value>
   </data>
-  <data name="metroLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="metroLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-15, -15</value>
-  </data>
-  <data name="metroLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 19</value>
-  </data>
-  <data name="metroLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="metroLabel1.Text" xml:space="preserve">
-    <value>metroLabel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Name" xml:space="preserve">
-    <value>metroLabel1</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroLabel, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;metroLabel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="DetailsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -35915,7 +35885,7 @@ or keep you updated on where you are in your self studying endeavor.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DetailsLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="MenuLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -35949,7 +35919,7 @@ or keep you updated on where you are in your self studying endeavor.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MenuLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -35979,21 +35949,21 @@ or keep you updated on where you are in your self studying endeavor.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
-  <data name="metroTile6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="todo_tile.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 154</value>
   </data>
-  <data name="metroTile6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="todo_tile.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 119</value>
   </data>
-  <data name="metroTile6.TabIndex" type="System.Int32, mscorlib">
+  <data name="todo_tile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="metroTile6.Text" xml:space="preserve">
+  <data name="todo_tile.Text" xml:space="preserve">
     <value>To do</value>
   </data>
-  <data name="metroTile6.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="todo_tile.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
         JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3QAAAN0AEQbD0HAAAAB3RJ
@@ -36009,17 +35979,106 @@ or keep you updated on where you are in your self studying endeavor.</value>
         Z90/nm5eqJg68g17eugFqICfggAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;metroTile6.Name" xml:space="preserve">
-    <value>metroTile6</value>
+  <data name="&gt;&gt;todo_tile.Name" xml:space="preserve">
+    <value>todo_tile</value>
   </data>
-  <data name="&gt;&gt;metroTile6.Type" xml:space="preserve">
+  <data name="&gt;&gt;todo_tile.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;metroTile6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;todo_tile.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;metroTile6.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;todo_tile.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="metroTile1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 29</value>
+  </data>
+  <data name="metroTile1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 119</value>
+  </data>
+  <data name="metroTile1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="metroTile1.Text" xml:space="preserve">
+    <value>Stay</value>
+  </data>
+  <data name="metroTile1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="metroTile1.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3WAAAN1gGQb3mcAAAAAmJL
+        R0QAAKqNIzIAAAAHdElNRQfgBQ4AGxRBQ1aGAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA1LTE0VDAw
+        OjI3OjIwKzAyOjAwNwlifwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wNS0xNFQwMDoyNzoyMCswMjow
+        MEZU2sMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAABH0lEQVRYR82X2RHDIAxE
+        aSJlpP8vN5Ey0gRhZ6IMBiEWgWOY4ccG7ePSEWKMQenP9O1I/dH4r81pfYMN2ILNakxL/J0Go70mISAO
+        G2iwWUGUABgg4t95bohcXGxVEDmAJu6F0MRVCAGwxEchLPEKAgCMOAvBiJ8gAIAbOtJaF3NEXPQOAHgm
+        lhBuG3IH3AZmF5C/Ai+EvHP2GE+7V/oBDwQrrDo2zRNeBaFeXst/j26ttRNNl24FlVU7YcaTXlSbhegG
+        sx6A10/QkXR7gFuPYFacCmBbPsNVKy/9AuWIrhJvHsc2wcizctnSmbnB62iWJiS3p2S3J6VsZtwNLOmq
+        s0f6K1C2KUysAoVdOZPemaWZBuEV17JtqjjNIf5Snn8AXPgwU9hx5dQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="metroTile1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.Name" xml:space="preserve">
+    <value>metroTile1</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;metroTile1.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="metroTile2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 29</value>
+  </data>
+  <data name="metroTile2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 119</value>
+  </data>
+  <data name="metroTile2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="metroTile2.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="metroTile2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="metroTile2.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3WAAAN1gGQb3mcAAAAAmJL
+        R0QAAKqNIzIAAAAHdElNRQfgBQ4AHDrS1M2OAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE2LTA1LTE0VDAw
+        OjI4OjU4KzAyOjAw/yh+jAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNi0wNS0xNFQwMDoyODo1OCswMjow
+        MI51xjAAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAABLUlEQVRYR+XWvQ3CMBCG
+        4RQUsAMdDRvQIqZAYgwWYAhKBkBiAoSYgBUo6GhpqM0Z8UmW5Z87+5wUIFlEUcL7xASHzhjTDTkGjdsL
+        /yvAlK54Q2PsfuV9zcCcok8a9nWlMQGiD4Ab/xnMBTPRGhCKA3G2iJaAVByIYysAJ24R9xYAbvxFgIU2
+        QBTXXojE8RBgSTtvNLbC50NR3AesaMcbtye975iI4rgL8ONw5BBVcQBi8RyiOg7Aw5n22KY/EypxAA4M
+        gD0ECLU4ACPaODERezoOT7XUKd9FhnMTYyGSIHJWdtz/GWogRPHQQlSDEMdjS3EJoiieehZIEMXxFMDe
+        nBxEVTwHyCGq4xxADKES5wJ8hFpcAgBiTSfNOCsc9xjtv2TizxOfwL0y7nGDAz4wMQ3YKbX8YQAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="metroTile2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.Name" xml:space="preserve">
+    <value>metroTile2</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTile, MetroFramework, Version=1.3.5.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;metroTile2.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>1136, 603</value>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.writeA = new MetroFramework.Controls.MetroTextBox();
             this.gendre = new MetroFramework.Controls.MetroComboBox();
             this.Add = new MetroFramework.Controls.MetroTextBox.MetroTextButton();
@@ -36,8 +37,10 @@
             this.allPanel = new MetroFramework.Controls.MetroPanel();
             this.todoPanel = new MetroFramework.Controls.MetroPanel();
             this.deletechecked = new MetroFramework.Controls.MetroButton();
+            this.MSM = new MetroFramework.Components.MetroStyleManager(this.components);
             this.allPanel.SuspendLayout();
             this.todoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MSM)).BeginInit();
             this.SuspendLayout();
             // 
             // writeA
@@ -166,13 +169,18 @@
             // 
             // deletechecked
             // 
-            this.deletechecked.Location = new System.Drawing.Point(387, 24);
+            this.deletechecked.Location = new System.Drawing.Point(396, 24);
             this.deletechecked.Name = "deletechecked";
             this.deletechecked.Size = new System.Drawing.Size(151, 32);
             this.deletechecked.TabIndex = 2;
             this.deletechecked.Text = "Delete Checked";
             this.deletechecked.UseSelectable = true;
             this.deletechecked.Click += new System.EventHandler(this.deletechecked_Click);
+            // 
+            // MSM
+            // 
+            this.MSM.Owner = this;
+            this.MSM.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // WriteStuff
             // 
@@ -188,6 +196,7 @@
             this.Load += new System.EventHandler(this.WriteStuff_Load);
             this.allPanel.ResumeLayout(false);
             this.todoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MSM)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +212,7 @@
         public MetroFramework.Controls.MetroPanel allPanel;
         public MetroFramework.Controls.MetroPanel todoPanel;
         private MetroFramework.Controls.MetroButton deletechecked;
+        private MetroFramework.Components.MetroStyleManager MSM;
 
     }
 }
